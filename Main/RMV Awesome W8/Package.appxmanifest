@@ -17,7 +17,7 @@
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="RMV_Awesome.App">
       <m2:VisualElements DisplayName="RMV Awesome" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="RMV Awesome" ForegroundText="light" BackgroundColor="#464646">
         <m2:DefaultTile Square310x310Logo="Assets\LogoSquare310.png" Wide310x150Logo="Assets\WideLogo.png" Square70x70Logo="Assets\LogoSquare70.png" />
-        <m2:SplashScreen Image="Assets\SplashScreen.png" />
+        <m2:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="blue" />
       </m2:VisualElements>
     </Application>
   </Applications>

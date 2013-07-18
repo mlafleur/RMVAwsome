@@ -20,7 +20,7 @@ namespace RMV_Awesome.Model
         {
             // Fetch the XML from the web
             System.Net.Http.HttpClient client = new System.Net.Http.HttpClient();
-            string response = await client.GetStringAsync("http://www.eot.state.ma.us/developers/downloads/qmaticXML.aspx");
+            string response = await client.GetStringAsync("http://www.massdot.state.ma.us/feeds/qmaticxml/qmaticXML.aspx");
 
             // Convert the response into an XML document
             var xmlDoc = System.Xml.Linq.XDocument.Load((new System.IO.StringReader(response)));
