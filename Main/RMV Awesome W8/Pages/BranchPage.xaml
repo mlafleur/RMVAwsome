@@ -1,0 +1,124 @@
+﻿<Page x:Name="pageRoot"
+      x:Class="RMV_Awesome.Pages.BranchPage"
+      DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:RMV_Awesome.Pages"
+      xmlns:common="using:RMV_Awesome.Common"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:model="using:RMV_Awesome.Model"
+      d:DataContext="{Binding Items[3], Source={d:DesignInstance IsDesignTimeCreatable=True, Type=model:MainViewModel}}"
+      mc:Ignorable="d">
+
+    <Page.Resources>
+        <common:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+        <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
+        <x:String x:Key="AppName">My Application</x:String>
+    </Page.Resources>
+
+    <!--
+        This grid acts as a root panel for the page that defines two rows:
+        * Row 0 contains the back button and page title
+        * Row 1 contains the rest of the page layout
+    -->
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition />
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Back button and page title -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <AppBarButton x:Name="backButton"
+                          Icon="Back"
+                          Height="95"
+                          Margin="10,46,10,0"
+                          Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
+                          Visibility="{Binding IsEnabled, Converter={StaticResource BooleanToVisibilityConverter}, RelativeSource={RelativeSource Mode=Self}}"
+                          AutomationProperties.Name="Back"
+                          AutomationProperties.AutomationId="BackButton"
+                          AutomationProperties.ItemType="Navigation Button" />
+            <TextBlock x:Name="pageTitle"
+                       Text="{Binding Title}"
+                       Style="{StaticResource HeaderTextBlockStyle}"
+                       Grid.Column="1"
+                       IsHitTestVisible="false"
+                       TextWrapping="NoWrap"
+                       VerticalAlignment="Bottom"
+                       Margin="0,0,30,40" />
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="300" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image Margin="5"
+                   Source="{Binding ImagePath}"
+                   Stretch="UniformToFill" />
+            <Border Grid.Column="2"
+                    Background="#FF82BAF1"
+                    BorderThickness="1">
+                <TextBlock Margin="25"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           FontSize="36"
+                           Text="{Binding Address}"
+                           TextAlignment="Center"
+                           TextWrapping="Wrap"
+                           Foreground="White" />
+            </Border>
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Border Background="#FFF02F2F"
+                        BorderThickness="1">
+                    <StackPanel HorizontalAlignment="Center"
+                                VerticalAlignment="Center">
+                        <TextBlock HorizontalAlignment="Center"
+                                   FontSize="28"
+                                   FontWeight="Bold"
+                                   Text="Licensing"
+                                   Foreground="White" />
+                        <TextBlock HorizontalAlignment="Center"
+                                   FontSize="28"
+                                   Text="{Binding LicensingWait}"
+                                   Foreground="White" />
+                    </StackPanel>
+                </Border>
+
+                <Border Grid.Row="1"
+                        Background="#FF1DBD57"
+                        BorderThickness="1">
+                    <StackPanel HorizontalAlignment="Center"
+                                VerticalAlignment="Center">
+                        <TextBlock HorizontalAlignment="Center"
+                                   FontSize="28"
+                                   FontWeight="Bold"
+                                   Text="Registration"
+                                   Foreground="White" />
+                        <TextBlock HorizontalAlignment="Center"
+                                   FontSize="28"
+                                   Text="{Binding RegistrationWait}"
+                                   Foreground="White" />
+                    </StackPanel>
+                </Border>
+
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
