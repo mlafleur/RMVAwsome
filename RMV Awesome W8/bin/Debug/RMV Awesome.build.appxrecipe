@@ -7,50 +7,62 @@
     <PackageArchitecture>neutral</PackageArchitecture>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\RMV Awesome W8\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Debug\RMV Awesome.exe">
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\RMV Awesome W8\bin\Debug\RMV Awesome.exe">
       <PackagePath>RMV Awesome.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Debug\RMV Awesome.pdb">
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\RMV Awesome W8\bin\Debug\RMV Awesome.pdb">
       <PackagePath>RMV Awesome.pdb</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\RMV Awesome W8\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\RMV Awesome W8\Assets\LogoSquare310.scale-100.png">
+      <PackagePath>Assets\LogoSquare310.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\RMV Awesome W8\Assets\LogoSquare70.scale-100.png">
+      <PackagePath>Assets\LogoSquare70.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\RMV Awesome W8\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\RMV Awesome W8\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\RMV Awesome W8\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\Common\ReadMe.txt">
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\RMV Awesome W8\Assets\WideLogo.png">
+      <PackagePath>Assets\WideLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\RMV Awesome W8\Common\ReadMe.txt">
       <PackagePath>Common\ReadMe.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\RMV Awesome W8\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\RMV Awesome W8\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Debug\Pages\BranchListPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\RMV Awesome W8\bin\Debug\Pages\BranchListPage.xbf">
       <PackagePath>Pages\BranchListPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Debug\Pages\BranchPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\RMV Awesome W8\bin\Debug\Pages\BranchPage.xbf">
       <PackagePath>Pages\BranchPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\RMV Awesome W8\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
