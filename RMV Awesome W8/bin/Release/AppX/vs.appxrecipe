@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DEVBOX</Machine>
+    <WindowsUser>Marc</WindowsUser>
+    <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>D07DD8E72F7A203E0D9A63714BAB708A8AD9A9D0B2EB5D18A6C64FE6361A0F5F</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>7c8f3dd7-2863-4c29-a615-3220fc25b8ea_1.0.0.0_neutral__3kkjfjc6x76r0</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>7c8f3dd7-2863-4c29-a615-3220fc25b8ea_3kkjfjc6x76r0!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>7c8f3dd7-2863-4c29-a615-3220fc25b8ea</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Marc</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-17T19:43:36.511</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Release\RMV Awesome.exe">
+      <PackagePath>RMV Awesome.exe</PackagePath>
+      <Modified>2013-07-17T19:43:35.572</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Release\RMV Awesome.pdb">
+      <PackagePath>RMV Awesome.pdb</PackagePath>
+      <Modified>2013-07-17T19:43:35.536</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-17T19:40:07.703</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\Assets\LogoSquare310.scale-100.png">
+      <PackagePath>Assets\LogoSquare310.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-17T19:42:07.247</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\Assets\LogoSquare70.scale-100.png">
+      <PackagePath>Assets\LogoSquare70.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-17T19:40:07.709</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-17T19:40:57.493</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-17T19:40:07.855</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-17T19:40:07.668</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\Assets\WideLogo.png">
+      <PackagePath>Assets\WideLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-17T19:40:07.674</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\Common\ReadMe.txt">
+      <PackagePath>Common\ReadMe.txt</PackagePath>
+      <Modified>2013-07-09T20:09:29.637</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Release\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2013-07-17T19:43:34.756</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Release\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2013-07-17T19:43:34.758</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Release\Pages\BranchListPage.xbf">
+      <PackagePath>Pages\BranchListPage.xbf</PackagePath>
+      <Modified>2013-07-17T19:43:34.758</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Release\Pages\BranchPage.xbf">
+      <PackagePath>Pages\BranchPage.xbf</PackagePath>
+      <Modified>2013-07-17T19:43:34.758</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-07-17T19:43:36.393</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

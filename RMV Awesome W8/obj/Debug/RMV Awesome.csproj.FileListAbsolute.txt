@@ -1,0 +1,89 @@
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\bin\Debug\App.xbf
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\bin\Debug\MainPage.xbf
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\bin\Debug\RMV Awesome.exe
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\bin\Debug\RMV Awesome.pdb
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\bin\Debug\resources.pri
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\bin\Debug\AppxManifest.xml
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\bin\Debug\RMV Awesome.build.appxrecipe
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\App.g.i.cs
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\App.g.cs
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\MainPage.g.i.cs
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\MainPage.g.cs
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\App.xaml
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\MainPage.xaml
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\App.xbf
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\MainPage.xbf
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\RMV Awesome.exe
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\RMV Awesome.pdb
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\priconfig.xml
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\priconfig.xml.intermediate
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\layout.resfiles
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\layout.resfiles.intermediate
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\resources.resfiles
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\resources.resfiles.intermediate
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\pri.resfiles
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\pri.resfiles.intermediate
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\qualifiers.txt
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\ProjectArchitectures.txt
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\bin\Debug\Pages\BranchListPage.xbf
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\Pages\BranchListPage.g.i.cs
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\Pages\BranchListPage.g.cs
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\Pages\BranchListPage.xaml
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\Pages\BranchListPage.xbf
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\bin\Debug\Pages\BranchPage.xbf
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\Pages\BranchPage.g.i.cs
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\Pages\BranchPage.g.cs
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\Pages\BranchPage.xaml
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\Pages\BranchPage.xbf
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\bin\Debug\Pages\ItemDetailPage1.xbf
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\Pages\ItemDetailPage1.g.i.cs
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\Pages\ItemDetailPage1.g.cs
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\Pages\ItemDetailPage1.xaml
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\obj\Debug\Pages\ItemDetailPage1.xbf
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\bin\Debug\RMV Awesome.exe.CodeAnalysisLog.xml
+C:\Users\Marc\Depot\massivescale_repo\RMV Awesome\RMV Awesome\bin\Debug\RMV Awesome.exe.lastcodeanalysissucceeded
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Debug\App.xbf
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Debug\MainPage.xbf
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Debug\Pages\BranchListPage.xbf
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Debug\Pages\BranchPage.xbf
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Debug\RMV Awesome.exe
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Debug\RMV Awesome.pdb
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Debug\resources.pri
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Debug\AppxManifest.xml
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\bin\Debug\RMV Awesome.build.appxrecipe
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\App.g.i.cs
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\App.g.cs
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\MainPage.g.i.cs
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\MainPage.g.cs
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\Pages\BranchListPage.g.i.cs
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\Pages\BranchListPage.g.cs
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\Pages\BranchPage.g.i.cs
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\Pages\BranchPage.g.cs
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\App.xaml
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\MainPage.xaml
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\Pages\BranchListPage.xaml
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\Pages\BranchPage.xaml
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\App.xbf
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\MainPage.xbf
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\Pages\BranchListPage.xbf
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\Pages\BranchPage.xbf
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\RMV Awesome.exe
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\RMV Awesome.pdb
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\priconfig.xml
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\priconfig.xml.intermediate
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\layout.resfiles
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\layout.resfiles.intermediate
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\resources.resfiles
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\resources.resfiles.intermediate
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\pri.resfiles
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\pri.resfiles.intermediate
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\qualifiers.txt
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Marc\Documents\GitHub\RMVAwsome\Main\RMV Awesome W8\obj\Debug\ProjectArchitectures.txt
