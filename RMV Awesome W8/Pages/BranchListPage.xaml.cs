@@ -1,4 +1,4 @@
-﻿using RMV_Awesome.Common;
+﻿using RMV_Awesome_W8.Common;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -16,7 +16,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Items Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234233
 
-namespace RMV_Awesome.Pages
+namespace RMV_Awesome_W8.Pages
 {
     /// <summary>
     /// A page that displays a collection of item previews.  In the Split Application this page

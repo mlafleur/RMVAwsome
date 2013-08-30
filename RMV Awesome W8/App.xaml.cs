@@ -17,7 +17,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=234227
 
-namespace RMV_Awesome
+namespace RMV_Awesome_W8
 {
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.

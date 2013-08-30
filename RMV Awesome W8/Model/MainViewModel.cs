@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RMV_Awesome.Model
+namespace RMV_Awesome_W8.Model
 {
     public class MainViewModel
     {

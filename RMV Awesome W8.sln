@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.20617.1 PREVIEW
+VisualStudioVersion = 12.0.20623.1 VSUPREVIEW
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMV Awesome", "RMV Awesome W8\RMV Awesome.csproj", "{FEAB0F03-1F09-45A2-AED4-E1C28A74D699}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMV Awesome W8", "RMV Awesome W8\RMV Awesome W8.csproj", "{FEAB0F03-1F09-45A2-AED4-E1C28A74D699}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

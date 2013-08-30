@@ -1,13 +1,13 @@
 ﻿<Page x:Name="pageRoot"
-      x:Class="RMV_Awesome.Pages.BranchPage"
+      x:Class="RMV_Awesome_W8.Pages.BranchPage"
       DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:local="using:RMV_Awesome.Pages"
-      xmlns:common="using:RMV_Awesome.Common"
+      xmlns:local="using:RMV_Awesome_W8.Pages"
+      xmlns:common="using:RMV_Awesome_W8.Common"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      xmlns:model="using:RMV_Awesome.Model"
+      xmlns:model="using:RMV_Awesome_W8.Model"
       d:DataContext="{Binding Items[3], Source={d:DesignInstance IsDesignTimeCreatable=True, Type=model:MainViewModel}}"
       mc:Ignorable="d">
 
