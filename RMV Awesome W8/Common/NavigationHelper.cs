@@ -10,7 +10,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 
-namespace RMV_Awesome_W8.Common
+namespace RMV.Awesome.W8.Common
 {
     /// <summary>
     /// NavigationManager aids in navigation between pages.  It provides commands used to 

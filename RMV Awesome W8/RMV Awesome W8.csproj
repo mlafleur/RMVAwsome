@@ -7,7 +7,7 @@
     <ProjectGuid>{FEAB0F03-1F09-45A2-AED4-E1C28A74D699}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RMV_Awesome_W8</RootNamespace>
+    <RootNamespace>RMV.Awesome.W8</RootNamespace>
     <AssemblyName>RMV Awesome W8</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformVersion>8.1</TargetPlatformVersion>

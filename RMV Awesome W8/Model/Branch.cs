@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RMV_Awesome_W8.Model
+namespace RMV.Awesome.W8.Model
 {
     public class Branch : System.ComponentModel.INotifyPropertyChanged
     {

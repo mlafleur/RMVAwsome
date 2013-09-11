@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RMV_Awesome_W8.Model
+namespace RMV.Awesome.W8.Model
 {
     /* Please note: This class is a bad idea! :)
      * We're using this here to provide the data not populated by the RMV XML Feed for the 

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace RMV_Awesome_W8.Common
+namespace RMV.Awesome.W8.Common
 {
     /// <summary>
     /// A command whose sole purpose is to relay its functionality 
