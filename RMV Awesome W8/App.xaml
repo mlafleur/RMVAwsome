@@ -1,7 +1,7 @@
 ﻿<Application
-    x:Class="RMV_Awesome_W8.App"
+    x:Class="RMV.Awesome.W8.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:RMV_Awesome_W8">
+    xmlns:local="using:RMV.Awesome.W8">
 
 </Application>
