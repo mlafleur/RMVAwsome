@@ -65,7 +65,7 @@ namespace RMV.Awesome.W8.Pages
         private void navigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
 
-            var viewModel = new Model.MainViewModel();           
+            var viewModel = new PCL.Model.MainViewModel();           
             this.DefaultViewModel["Items"] = viewModel.Items;
             viewModel.FetchXMLFeed();
 
