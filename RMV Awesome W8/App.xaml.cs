@@ -77,8 +77,22 @@ namespace RMV.Awesome.W8
                     throw new Exception("Failed to create initial page");
                 }
             }
+
+            Windows.UI.ApplicationSettings.SettingsPane.GetForCurrentView().CommandsRequested += App_CommandsRequested;
+
             // Ensure the current window is active
             Window.Current.Activate();
+        }
+
+        void App_CommandsRequested(Windows.UI.ApplicationSettings.SettingsPane sender, Windows.UI.ApplicationSettings.SettingsPaneCommandsRequestedEventArgs args)
+        {
+            // Add a command that links to a website
+            Windows.UI.ApplicationSettings.SettingsCommand privacyPolicyCommand = new Windows.UI.ApplicationSettings.SettingsCommand("privacyPolicyCommand", "Privacy Policy", (x) =>
+            {
+                Windows.System.Launcher.LaunchUriAsync(new Uri("http://massivescale.com/pages/apps/rmv-awesome/rmv-awesome-privacy-policy/")); // Launch the website
+            });
+            args.Request.ApplicationCommands.Add(privacyPolicyCommand);
+
         }
 
         /// <summary>
