@@ -64,7 +64,8 @@ namespace RMV.Awesome.W8.Pages
         /// session.  This will be null the first time a page is visited.</param>
         private void navigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
-            this.DataContext = (PCL.Model.Branch)e.NavigationParameter;
+            string town = e.NavigationParameter as string;
+            this.DataContext = PCL.Model.MainViewModel.Current.Items.First(c=>c.Town == town);
         }
 
         /// <summary>

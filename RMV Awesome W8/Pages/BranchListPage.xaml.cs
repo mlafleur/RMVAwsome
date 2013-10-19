@@ -64,11 +64,8 @@ namespace RMV.Awesome.W8.Pages
         /// session.  The state will be null the first time a page is visited.</param>
         private void navigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
-
-            var viewModel = new PCL.Model.MainViewModel();           
-            this.DefaultViewModel["Items"] = viewModel.Items;
-            viewModel.FetchXMLFeed();
-
+            this.DefaultViewModel["Items"] = PCL.Model.MainViewModel.Current.Items;
+            PCL.Model.MainViewModel.Current.FetchXMLFeed();
         }
 
         #region NavigationHelper registration
@@ -96,7 +93,8 @@ namespace RMV.Awesome.W8.Pages
 
         private void Branch_Click(object sender, ItemClickEventArgs e)
         {
-            this.Frame.Navigate(typeof(Pages.BranchPage), e.ClickedItem);
+            PCL.Model.Branch branch = e.ClickedItem as PCL.Model.Branch;
+            this.Frame.Navigate(typeof(Pages.BranchPage), branch.Town);
         }
 
     }
