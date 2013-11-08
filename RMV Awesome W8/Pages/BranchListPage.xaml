@@ -8,7 +8,7 @@
     xmlns:common="using:RMV.Awesome.W8.Common"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:model="using:RMV.Awesome.W8.Model"
+    xmlns:model="using:RMV.Awesome.PCL.Model"
     mc:Ignorable="d">
 
     <Page.Resources>
@@ -17,7 +17,7 @@
         <CollectionViewSource
         x:Name="itemsViewSource"
         Source="{Binding Items}"
-        d:Source="{Binding Items, Source={d:DesignInstance IsDesignTimeCreatable=True, Type=model:MainViewModel}}"/>
+        d:Source="{Binding Items, Source={d:DesignInstance IsDesignTimeCreatable=True, Type=model:DesignTimeViewModel}}"/>
 
         <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
         <x:String x:Key="AppName">RMV Awesome</x:String>
