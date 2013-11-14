@@ -7,8 +7,8 @@
       xmlns:common="using:RMV.Awesome.W8.Common"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      xmlns:model="using:RMV.Awesome.W8.Model"
-      d:DataContext="{Binding Items[3], Source={d:DesignInstance IsDesignTimeCreatable=True, Type=model:MainViewModel}}"
+      xmlns:model="clr-namespace:RMV.Awesome.PCL.Model;assembly=RMV.Awesome.PCL"
+      d:DataContext="{Binding Items[3], Source={d:DesignInstance IsDesignTimeCreatable=True, Type=model:DesignTimeViewModel}}"
       mc:Ignorable="d">
 
     <Page.Resources>
@@ -85,7 +85,7 @@
                     <RowDefinition />
                     <RowDefinition />
                 </Grid.RowDefinitions>
-                <Border Background="#FFF02F2F"
+                <Border Background="#FFF0982F"
                         BorderThickness="1">
                     <StackPanel HorizontalAlignment="Center"
                                 VerticalAlignment="Center">
@@ -102,7 +102,7 @@
                 </Border>
 
                 <Border Grid.Row="1"
-                        Background="#FF1DBD57"
+                        Background="#FF1DBDB6"
                         BorderThickness="1">
                     <StackPanel HorizontalAlignment="Center"
                                 VerticalAlignment="Center">

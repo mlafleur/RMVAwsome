@@ -31,6 +31,10 @@ namespace RMV.Awesome.PCL.Model
         public string Town { get; set; }
         public string ImagePath { get; set; }
 
+        public string DisplayAddress
+        {
+            get { return Address + ", " + Town + ", MA"; }
+        }
 
 
         /* The following properties change based on the XML feed we're pulling
