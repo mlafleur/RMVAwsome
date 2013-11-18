@@ -371,5 +371,10 @@
       <PackageArchitecture>arm</PackageArchitecture>
       <PackageMaxArchitectureVersion>1.0.0.22</PackageMaxArchitectureVersion>
     </PackageInfo>
+    <PackageInfo>
+      <OsMinVersion>6.3.0.0</OsMinVersion>
+      <PackageArchitecture>neutral</PackageArchitecture>
+      <PackageMaxArchitectureVersion>2.0.0.23</PackageMaxArchitectureVersion>
+    </PackageInfo>
   </PackageInfoList>
 </StoreAssociation>
