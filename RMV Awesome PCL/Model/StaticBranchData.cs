@@ -1,19 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RMV.Awesome.PCL.Model
+﻿namespace RMV.Awesome.PCL.Model
 {
     /* Please note: This class is a bad idea! :)
-     * We're using this here to provide the data not populated by the RMV XML Feed for the 
-     * sake of this demo. In a real-world app, this data should be coming from the cloud. 
-     * It would be a great use of an Azure Table for example. This would allow you to update 
+     * We're using this here to provide the data not populated by the RMV XML Feed for the
+     * sake of this demo. In a real-world app, this data should be coming from the cloud.
+     * It would be a great use of an Azure Table for example. This would allow you to update
      * the Branch data without having to update the App itself. */
+
     public class StaticBranchData
     {
-
         public static System.Collections.ObjectModel.ObservableCollection<Branch> Data
         {
             get
@@ -52,7 +46,6 @@ namespace RMV.Awesome.PCL.Model
                 details.Add(new Branch() { Title = "Worcester", Address = "611 Main Street", Latitude = 42.260149, Longitude = -71.804329, Town = "Worcester", ImagePath = "http://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Downtown_Worcester%2C_Massachusetts.jpg/640px-Downtown_Worcester%2C_Massachusetts.jpg" });
 
                 return details;
-
             }
         }
     }
