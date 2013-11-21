@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
-  <App xmlns="" ProductID="{a610c0a7-d2e7-4fba-9fbf-8f2ba579809f}" Title="RMV Awesome!" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="RMV.Awesome.WP8 author" Description="&#xD;&#xA;RMV Awesome! tells you how long the wait is for Licensing and for Registration" Publisher="RMV.Awesome.WP8" PublisherID="{2d923fcd-3033-4e3d-9cd9-56aac641a18c}">
+  <App xmlns="" ProductID="{a610c0a7-d2e7-4fba-9fbf-8f2ba579809f}" Title="RMV Awesome!" RuntimeType="Silverlight" Version="2.0.0.0" Genre="apps.normal" Author="RMV.Awesome.WP8 author" Description="&#xD;&#xA;RMV Awesome! tells you how long the wait is for Licensing and for Registration" Publisher="RMV.Awesome.WP8" PublisherID="{2d923fcd-3033-4e3d-9cd9-56aac641a18c}">
     <IconPath IsRelative="true" IsResource="false">Assets\WP8-Small.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
