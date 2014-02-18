@@ -1,4 +1,5 @@
-﻿<Page x:Name="pageRoot"
+﻿<Page xmlns:UI="using:Microsoft.Advertising.WinRT.UI"
+      x:Name="pageRoot"
       x:Class="RMV.Awesome.W8.Pages.BranchPage"
       DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -67,18 +68,6 @@
             <Image Margin="5"
                    Source="{Binding ImagePath}"
                    Stretch="UniformToFill" />
-            <Border Grid.Column="2"
-                    Background="#FF82BAF1"
-                    BorderThickness="1">
-                <TextBlock Margin="25"
-                           HorizontalAlignment="Center"
-                           VerticalAlignment="Center"
-                           FontSize="36"
-                           Text="{Binding Address}"
-                           TextAlignment="Center"
-                           TextWrapping="Wrap"
-                           Foreground="White" />
-            </Border>
 
             <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
@@ -117,7 +106,31 @@
                                    Foreground="White" />
                     </StackPanel>
                 </Border>
-
+            </Grid>
+            
+            <Grid Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+                <Border Background="#FF82BAF1"
+                        BorderThickness="1">
+                    <TextBlock Margin="25"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               FontSize="36"
+                               Text="{Binding Address}"
+                               TextAlignment="Center"
+                               TextWrapping="Wrap"
+                               Foreground="White" />
+                </Border>
+                <Border Grid.Row="1"
+                        Background="#FFA6A9F0">
+                    <UI:AdControl ApplicationId="ff8033b3-8711-4711-9fef-8fdffe00e3ec"
+                                  AdUnitId="162821"
+                                  Width="250"
+                                  Height="250" />
+                </Border>
             </Grid>
         </Grid>
     </Grid>

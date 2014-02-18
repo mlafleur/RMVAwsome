@@ -1,4 +1,4 @@
-﻿<phone:PhoneApplicationPage
+﻿<phone:PhoneApplicationPage xmlns:UI="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI" 
     x:Class="RMV.Awesome.WP8.BranchPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -20,6 +20,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
         <!--TitlePanel contains the name of the application and page title-->
@@ -91,6 +92,12 @@
                            Foreground="White" />
             </Border>
         </Grid>
+        <UI:AdControl Grid.Row="2"
+                      Width="480"
+                      Height="80"
+                      ApplicationId="4aebd19d-a835-425f-b6e8-43385d5fdf2a"
+                      AdUnitId="162825"
+                      IsAutoCollapseEnabled="True" />
     </Grid>
 
 </phone:PhoneApplicationPage>
