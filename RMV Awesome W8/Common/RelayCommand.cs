@@ -1,29 +1,19 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace RMV.Awesome.W8.Common
 {
     /// <summary>
-    /// A command whose sole purpose is to relay its functionality 
-    /// to other objects by invoking delegates. 
+    /// A command whose sole purpose is to relay its functionality
+    /// to other objects by invoking delegates.
     /// The default return value for the CanExecute method is 'true'.
     /// <see cref="RaiseCanExecuteChanged"/> needs to be called whenever
     /// <see cref="CanExecute"/> is expected to return a different value.
     /// </summary>
     public class RelayCommand : ICommand
     {
-        private readonly Action _execute;
         private readonly Func<bool> _canExecute;
-
-        /// <summary>
-        /// Raised when RaiseCanExecuteChanged is called.
-        /// </summary>
-        public event EventHandler CanExecuteChanged;
-
+        private readonly Action _execute;
         /// <summary>
         /// Creates a new command that can always execute.
         /// </summary>
@@ -46,6 +36,10 @@ namespace RMV.Awesome.W8.Common
             _canExecute = canExecute;
         }
 
+        /// <summary>
+        /// Raised when RaiseCanExecuteChanged is called.
+        /// </summary>
+        public event EventHandler CanExecuteChanged;
         /// <summary>
         /// Determines whether this <see cref="RelayCommand"/> can execute in its current state.
         /// </summary>

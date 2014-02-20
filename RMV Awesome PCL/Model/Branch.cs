@@ -5,6 +5,7 @@
         // Set the default values for wait times to "Unknown" until we pull
         // live values from the RMV XML feed
         private string _licensingWait = "Unknown";
+
         private string _registrationWait = "Unknown";
 
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
@@ -15,6 +16,8 @@
         {
             get { return Address + ", " + Town + ", MA"; }
         }
+
+        public string Id { get; set; }
 
         public string ImagePath { get; set; }
 
@@ -37,9 +40,6 @@
                 NotifyChanged("Subtitle");
             }
         }
-
-        public string Id { get; set; }
-        
 
         public double Longitude { get; set; }
 

@@ -1,17 +1,6 @@
 ﻿using RMV.Awesome.W8.Common;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Items Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234233
@@ -24,8 +13,14 @@ namespace RMV.Awesome.W8.Pages
     /// </summary>
     public sealed partial class BranchListPage : Page
     {
-        private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
+        private NavigationHelper navigationHelper;
+        public BranchListPage()
+        {
+            this.InitializeComponent();
+            this.navigationHelper = new NavigationHelper(this);
+            this.navigationHelper.LoadState += navigationHelper_LoadState;
+        }
 
         /// <summary>
         /// This can be changed to a strongly typed view model.
@@ -36,19 +31,17 @@ namespace RMV.Awesome.W8.Pages
         }
 
         /// <summary>
-        /// NavigationHelper is used on each page to aid in navigation and 
+        /// NavigationHelper is used on each page to aid in navigation and
         /// process lifetime management
         /// </summary>
         public NavigationHelper NavigationHelper
         {
             get { return this.navigationHelper; }
         }
-
-        public BranchListPage()
+        private void Branch_Click(object sender, ItemClickEventArgs e)
         {
-            this.InitializeComponent();
-            this.navigationHelper = new NavigationHelper(this);
-            this.navigationHelper.LoadState += navigationHelper_LoadState;
+            PCL.Model.Branch branch = e.ClickedItem as PCL.Model.Branch;
+            this.Frame.Navigate(typeof(Pages.BranchPage), branch.Town);
         }
 
         /// <summary>
@@ -72,30 +65,22 @@ namespace RMV.Awesome.W8.Pages
 
         /// The methods provided in this section are simply used to allow
         /// NavigationHelper to respond to the page's navigation methods.
-        /// 
-        /// Page specific logic should be placed in event handlers for the  
+        ///
+        /// Page specific logic should be placed in event handlers for the
         /// <see cref="GridCS.Common.NavigationHelper.LoadState"/>
         /// and <see cref="GridCS.Common.NavigationHelper.SaveState"/>.
-        /// The navigation parameter is available in the LoadState method 
+        /// The navigation parameter is available in the LoadState method
         /// in addition to page state preserved during an earlier session.
-
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            navigationHelper.OnNavigatedTo(e);
-        }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             navigationHelper.OnNavigatedFrom(e);
         }
 
-        #endregion
-
-        private void Branch_Click(object sender, ItemClickEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            PCL.Model.Branch branch = e.ClickedItem as PCL.Model.Branch;
-            this.Frame.Navigate(typeof(Pages.BranchPage), branch.Town);
+            navigationHelper.OnNavigatedTo(e);
         }
-
+        #endregion NavigationHelper registration
     }
 }

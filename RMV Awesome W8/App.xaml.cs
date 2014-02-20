@@ -1,19 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=234227
 
@@ -41,7 +30,6 @@ namespace RMV.Awesome.W8
         /// <param name="e">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
-
 #if DEBUG
             if (System.Diagnostics.Debugger.IsAttached)
             {
@@ -84,7 +72,7 @@ namespace RMV.Awesome.W8
             Window.Current.Activate();
         }
 
-        void App_CommandsRequested(Windows.UI.ApplicationSettings.SettingsPane sender, Windows.UI.ApplicationSettings.SettingsPaneCommandsRequestedEventArgs args)
+        private void App_CommandsRequested(Windows.UI.ApplicationSettings.SettingsPane sender, Windows.UI.ApplicationSettings.SettingsPaneCommandsRequestedEventArgs args)
         {
             // Add a command that links to a website
             Windows.UI.ApplicationSettings.SettingsCommand privacyPolicyCommand = new Windows.UI.ApplicationSettings.SettingsCommand("privacyPolicyCommand", "Privacy Policy", (x) =>
@@ -92,7 +80,6 @@ namespace RMV.Awesome.W8
                 Windows.System.Launcher.LaunchUriAsync(new Uri("http://massivescale.com/pages/apps/rmv-awesome/rmv-awesome-privacy-policy/")); // Launch the website
             });
             args.Request.ApplicationCommands.Add(privacyPolicyCommand);
-
         }
 
         /// <summary>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="45328MassiveScale.MassachusettsRMVInfo" Publisher="CN=D17C0479-956D-4561-92A8-D153C047F69C" Version="2.0.0.25" />
+  <Identity Name="45328MassiveScale.MassachusettsRMVInfo" Publisher="CN=D17C0479-956D-4561-92A8-D153C047F69C" Version="2.0.0.26" />
   <Properties>
     <DisplayName>RMV Awesome!</DisplayName>
     <PublisherDisplayName>MassiveScale</PublisherDisplayName>

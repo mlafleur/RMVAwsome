@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+﻿using Microsoft.Phone.Controls;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Navigation;
-using Microsoft.Phone.Controls;
-using Microsoft.Phone.Shell;
 
 namespace RMV.Awesome.WP8
 {
@@ -25,6 +19,6 @@ namespace RMV.Awesome.WP8
             PCL.Model.MainViewModel viewModel = PCL.Model.MainViewModel.Current;
             this.DataContext = viewModel.Items[int.Parse(branchindex)];
             viewModel.FetchXMLFeed();
-        }       
+        }
     }
 }

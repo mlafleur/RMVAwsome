@@ -8,8 +8,7 @@ namespace RMV.Awesome.PCL.Model
 
         private MainViewModel()
         {
-            // Seed our Items with our static branch data
-            if (Items == null) Items = StaticBranchData.Data;
+            Items = new System.Collections.ObjectModel.ObservableCollection<Branch>();
         }
 
         public static MainViewModel Current
@@ -27,6 +26,16 @@ namespace RMV.Awesome.PCL.Model
         {
             try
             {
+                // Populate Items with AzureBranchData (if needed)
+                if (Items.Count == 0)
+                {
+                    foreach (var item in await new AzureBranchData().GetBranchCollection())
+                    {
+                        Items.Add(item);
+                    }
+                }
+
+
                 // Fetch the XML from the web
                 System.Net.Http.HttpClient client = new System.Net.Http.HttpClient();
                 string response = await client.GetStringAsync("http://www.massdot.state.ma.us/feeds/qmaticxml/qmaticXML.aspx");

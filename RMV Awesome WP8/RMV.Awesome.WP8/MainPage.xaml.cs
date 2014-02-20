@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+﻿using Microsoft.Phone.Controls;
+using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Navigation;
-using Microsoft.Phone.Controls;
-using Microsoft.Phone.Shell;
-using RMV.Awesome.WP8.Resources;
 
 namespace RMV.Awesome.WP8
 {
@@ -17,10 +11,14 @@ namespace RMV.Awesome.WP8
         public MainPage()
         {
             InitializeComponent();
-            
 
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
+        }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Uri("/BranchPage.xaml?branchindex=" + BranchList.SelectedIndex.ToString(), UriKind.Relative));
         }
 
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
@@ -29,14 +27,6 @@ namespace RMV.Awesome.WP8
             this.DataContext = viewModel;
             viewModel.FetchXMLFeed();
         }
-
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            this.NavigationService.Navigate(new Uri("/BranchPage.xaml?branchindex=" + BranchList.SelectedIndex.ToString(), UriKind.Relative));         
-        }
-
-        
-
         // Sample code for building a localized ApplicationBar
         //private void BuildLocalizedApplicationBar()
         //{
