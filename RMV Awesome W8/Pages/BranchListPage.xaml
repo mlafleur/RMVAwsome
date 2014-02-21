@@ -72,8 +72,22 @@
                                        Foreground="{StaticResource ListViewItemOverlaySecondaryForegroundThemeBrush}"
                                        Style="{StaticResource BaseTextBlockStyle}"
                                        TextWrapping="NoWrap"
-                                       Margin="15,0,15,10"
+                                       Margin="15,0,15,0"
                                        FontSize="12" />
+                            <StackPanel Margin="15,0,15,10"
+                                        Orientation="Horizontal">
+                                <TextBlock Text="{Binding Distance}"
+                                           Foreground="{StaticResource ListViewItemOverlaySecondaryForegroundThemeBrush}"
+                                           Style="{StaticResource BaseTextBlockStyle}"
+                                           TextWrapping="NoWrap"
+                                           FontSize="12" />
+                                <TextBlock Text="Miles Away"
+                                           Margin="5,0,0,0"
+                                           Foreground="{StaticResource ListViewItemOverlaySecondaryForegroundThemeBrush}"
+                                           Style="{StaticResource BaseTextBlockStyle}"
+                                           TextWrapping="NoWrap"
+                                           FontSize="12" />
+                            </StackPanel>
                         </StackPanel>
                     </Grid>
                 </DataTemplate>

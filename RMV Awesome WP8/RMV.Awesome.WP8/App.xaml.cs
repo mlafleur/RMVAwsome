@@ -61,6 +61,12 @@ namespace RMV.Awesome.WP8
         // This code will not execute when the application is reactivated
         private void Application_Launching(object sender, LaunchingEventArgs e)
         {
+            var settings = System.IO.IsolatedStorage.IsolatedStorageSettings.ApplicationSettings;
+            if (!settings.Contains("location"))
+            {
+                settings.Add("location", true);
+                settings.Save();
+            }
         }
 
         // Code to execute when the application is activated (brought to foreground)

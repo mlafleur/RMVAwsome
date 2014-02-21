@@ -55,8 +55,26 @@ namespace RMV.Awesome.W8.Pages
         /// <see cref="Frame.Navigate(Type, Object)"/> when this page was initially requested and
         /// a dictionary of state preserved by this page during an earlier
         /// session.  The state will be null the first time a page is visited.</param>
-        private void navigationHelper_LoadState(object sender, LoadStateEventArgs e)
+        private async void navigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
+
+            try
+            {
+                // Reference the locator
+                var locator = new Windows.Devices.Geolocation.Geolocator();
+
+                // Sample the current position
+                var position = await locator.GetGeopositionAsync();
+
+                // Pass current position to PCL
+                RMV.Awesome.PCL.Utilities.Location.DeviceLatitude = position.Coordinate.Point.Position.Latitude;
+                RMV.Awesome.PCL.Utilities.Location.DeviceLogitude = position.Coordinate.Point.Position.Longitude;
+            }
+            catch
+            {
+                // We were unable to check location (most common reason is the user disabled geolocation
+            }
+
             this.DefaultViewModel["Items"] = PCL.Model.MainViewModel.Current.Items;
             PCL.Model.MainViewModel.Current.FetchXMLFeed();
         }

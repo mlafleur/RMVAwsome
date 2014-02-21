@@ -15,6 +15,15 @@
                             Orientation="Portrait"
                             shell:SystemTray.IsVisible="True"
                             Loaded="PhoneApplicationPage_Loaded">
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem IsEnabled="True"
+                                              Text="Location Settings"
+                                              Click="ApplicationBarMenuItem_Click" />
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
     <phone:PhoneApplicationPage.DataContext>
         <Model:DesignTimeViewModel />
     </phone:PhoneApplicationPage.DataContext>
@@ -67,6 +76,17 @@
                                                Foreground="{StaticResource PhoneContrastForegroundBrush}"
                                                TextWrapping="NoWrap"
                                                FontSize="12" />
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="{Binding Distance}"
+                                                   Foreground="{StaticResource PhoneContrastForegroundBrush}"
+                                                   TextWrapping="NoWrap"
+                                                   FontSize="12" />
+                                        <TextBlock Text="Miles Away"
+                                                   Margin="5,0,0,0"
+                                                   Foreground="{StaticResource PhoneContrastForegroundBrush}"
+                                                   TextWrapping="NoWrap"
+                                                   FontSize="12" />
+                                    </StackPanel>
                                 </StackPanel>
                             </StackPanel>
                         </Grid>

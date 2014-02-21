@@ -21,6 +21,7 @@ namespace RMV.Awesome.W8
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            
         }
 
         /// <summary>

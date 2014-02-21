@@ -9,6 +9,7 @@ namespace RMV.Awesome.PCL.Model
         private MainViewModel()
         {
             Items = new System.Collections.ObjectModel.ObservableCollection<Branch>();
+            
         }
 
         public static MainViewModel Current
@@ -29,7 +30,11 @@ namespace RMV.Awesome.PCL.Model
                 // Populate Items with AzureBranchData (if needed)
                 if (Items.Count == 0)
                 {
-                    foreach (var item in await new AzureBranchData().GetBranchCollection())
+                    // Fetch Azure Branch Data
+                    var azureBranchData = await new AzureBranchData().GetBranchCollection();
+
+                    // Populate the Items collection
+                    foreach (var item in azureBranchData.OrderBy(c => c.Distance = Utilities.Location.CalculateDistance(c.Latitude, c.Longitude)))
                     {
                         Items.Add(item);
                     }

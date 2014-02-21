@@ -41,6 +41,8 @@
             }
         }
 
+        public double Distance { get; set; }
+
         public double Longitude { get; set; }
 
         public string RegistrationWait
