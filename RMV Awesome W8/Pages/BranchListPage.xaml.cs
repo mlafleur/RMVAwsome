@@ -74,7 +74,7 @@ namespace RMV.Awesome.W8.Pages
             {
                 // We were unable to check location (most common reason is the user disabled geolocation
             }
-
+            
             this.DefaultViewModel["Items"] = PCL.Model.MainViewModel.Current.Items;
             PCL.Model.MainViewModel.Current.FetchXMLFeed();
         }

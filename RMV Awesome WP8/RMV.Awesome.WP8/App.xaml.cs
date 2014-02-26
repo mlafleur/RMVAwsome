@@ -7,11 +7,16 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using RMV.Awesome.WP8.Resources;
+using Microsoft.WindowsAzure.MobileServices;
 
 namespace RMV.Awesome.WP8
 {
     public partial class App : Application
     {
+        public static MobileServiceClient MobileService = new MobileServiceClient(    
+            "https://rmvawesomemobileservice.azure-mobile.net/",
+            "UClTVJXEtAkzboYGjkTaWgDZbiXUFq92"
+);
         /// <summary>
         /// Provides easy access to the root frame of the Phone Application.
         /// </summary>

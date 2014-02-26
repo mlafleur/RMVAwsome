@@ -53,11 +53,13 @@
             <GridView.ItemTemplate>
                 <DataTemplate>
                     <Grid HorizontalAlignment="Left"
-                          Width="250"
+                          Width="350"
                           Height="250">
                         <Border Background="{StaticResource ListViewItemPlaceholderBackgroundThemeBrush}">
                             <Image Source="{Binding ImagePath}"
                                    Stretch="UniformToFill"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
                                    AutomationProperties.Name="{Binding Title}" />
                         </Border>
                         <StackPanel VerticalAlignment="Bottom"
@@ -65,8 +67,8 @@
                             <TextBlock Text="{Binding Title}"
                                        Foreground="{StaticResource ListViewItemOverlayForegroundThemeBrush}"
                                        Style="{StaticResource BaseTextBlockStyle}"
-                                       Height="60"
-                                       Margin="15,0,15,0"
+                                       FontSize="18"
+                                       Margin="15,0,15,4"
                                        FontWeight="SemiBold" />
                             <TextBlock Text="{Binding Subtitle}"
                                        Foreground="{StaticResource ListViewItemOverlaySecondaryForegroundThemeBrush}"
@@ -81,7 +83,7 @@
                                            Style="{StaticResource BaseTextBlockStyle}"
                                            TextWrapping="NoWrap"
                                            FontSize="12" />
-                                <TextBlock Text="Miles Away"
+                                <TextBlock Text="Miles"
                                            Margin="5,0,0,0"
                                            Foreground="{StaticResource ListViewItemOverlaySecondaryForegroundThemeBrush}"
                                            Style="{StaticResource BaseTextBlockStyle}"

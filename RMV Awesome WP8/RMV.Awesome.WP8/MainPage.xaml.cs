@@ -23,6 +23,7 @@ namespace RMV.Awesome.WP8
 
         private async void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
+            
             // Get our application settings
             var settings = System.IO.IsolatedStorage.IsolatedStorageSettings.ApplicationSettings;
 
