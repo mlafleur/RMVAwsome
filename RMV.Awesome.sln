@@ -3,13 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMV Awesome PCL", "RMV Awesome PCL\RMV Awesome PCL.csproj", "{BE018E56-9A0F-460F-9E06-48F565CAAAA0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMV.Awesome.PCL", "RMV Awesome PCL\RMV.Awesome.PCL.csproj", "{BE018E56-9A0F-460F-9E06-48F565CAAAA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMV Awesome W8", "RMV Awesome W8\RMV Awesome W8.csproj", "{FEAB0F03-1F09-45A2-AED4-E1C28A74D699}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMV.Awesome.W8", "RMV Awesome W8\RMV.Awesome.W8.csproj", "{FEAB0F03-1F09-45A2-AED4-E1C28A74D699}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMV.Awesome.WP8", "RMV Awesome WP8\RMV.Awesome.WP8\RMV.Awesome.WP8.csproj", "{A610C0A7-D2E7-4FBA-9FBF-8F2BA579809F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADSUtil", "ADSUtil\ADSUtil.csproj", "{E4C011F2-2B43-468E-9664-C35FB01876C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{6869057B-74DC-4A80-9A02-96CB73D6A494}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
