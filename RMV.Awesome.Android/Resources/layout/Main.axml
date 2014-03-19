@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff1969b3"
+    android:padding="5dp">
+    <TextView
+        android:id="@+id/Heading"
+        android:text="Branches"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textColor="#ffffffff" />
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/branchList"
+        android:padding="5dp"
+        android:minHeight="150px"
+        android:choiceMode="singleChoice"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar1"
+        android:indeterminate="true"
+        android:indeterminateOnly="true"
+        style="@android:style/Widget.ProgressBar"
+        android:indeterminateBehavior="cycle"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

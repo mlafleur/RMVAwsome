@@ -76,7 +76,7 @@ namespace ADSUtil
         {
             var tmp = new DesignTimeViewModel();
             return tmp.Items.ToList<Branch>();
-            var details = new List<Branch>();
+            //var details = new List<Branch>();
         }
 
     }

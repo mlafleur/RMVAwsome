@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff1969b3"
+    android:padding="5dp">
+    <TextView
+        android:id="@+id/BranchTitle"
+        android:text="Yarmouth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:textColor="#ffffffff" />
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:id="@+id/BranchImage"
+        android:minHeight="200px"
+        android:minWidth="200px"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout1"
+        android:paddingTop="10px">
+        <TableRow
+            android:id="@+id/tableRow1">
+            <TextView
+                android:text="Licensing:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView1"
+                android:layout_column="0"
+                android:layout_weight="10"
+                android:gravity="right"
+                android:paddingRight="5px" />
+            <TextView
+                android:text="Unknown"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="1"
+                android:id="@+id/LicensingWait"
+                android:layout_weight="10" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2">
+            <TextView
+                android:text="Registration:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView2"
+                android:layout_column="0"
+                android:gravity="right"
+                android:paddingRight="5px"
+                android:layout_weight="1" />
+            <TextView
+                android:text="Unknown"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_column="1"
+                android:id="@+id/RegistrationWait"
+                android:layout_weight="1" />
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:text="Address"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BranchAddress"
+        android:gravity="center_horizontal"
+        android:paddingTop="10px" />
+</LinearLayout>

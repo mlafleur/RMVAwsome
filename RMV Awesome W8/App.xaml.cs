@@ -83,7 +83,7 @@ namespace RMV.Awesome.W8
             // Add a command that links to a website
             Windows.UI.ApplicationSettings.SettingsCommand privacyPolicyCommand = new Windows.UI.ApplicationSettings.SettingsCommand("privacyPolicyCommand", "Privacy Policy", (x) =>
             {
-                Windows.System.Launcher.LaunchUriAsync(new Uri("http://massivescale.com/pages/apps/rmv-awesome/rmv-awesome-privacy-policy/")); // Launch the website
+                var ignore = Windows.System.Launcher.LaunchUriAsync(new Uri("http://massivescale.com/pages/apps/rmv-awesome/rmv-awesome-privacy-policy/")); // Launch the website
             });
             args.Request.ApplicationCommands.Add(privacyPolicyCommand);
         }

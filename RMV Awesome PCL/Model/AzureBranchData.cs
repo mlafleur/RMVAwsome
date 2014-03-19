@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.WindowsAzure.MobileServices;
+using System;
 
 namespace RMV.Awesome.PCL.Model
 {
@@ -13,9 +14,18 @@ namespace RMV.Awesome.PCL.Model
                 new Microsoft.WindowsAzure.MobileServices.MobileServiceClient(
                     "https://rmvawesomemobileservice.azure-mobile.net/", "UClTVJXEtAkzboYGjkTaWgDZbiXUFq92");
 
+            try
+            {
+                var branchData = await RMVAwesomeMobileServiceClient.GetTable<Branch>().ReadAsync();
 
-            // Return the Azure Branch table
-            return await RMVAwesomeMobileServiceClient.GetTable<Branch>().ReadAsync();
+                // Return the Azure Branch table
+                return branchData;
+            }
+            catch(Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex);
+                throw;
+            }
         }
     }
 }
