@@ -39,24 +39,29 @@ namespace RMV.Awesome.Droid
             var adapter = new Lib.BranchListAdapter(this, viewModel.Items);
 
             // Find the list view in the layout
-            ListView listView = (ListView)FindViewById(Resource.Id.branchList);
-
-            
+            GridView gridView = (GridView)FindViewById(Resource.Id.gridview);
 
             // Add a click event
-            listView.ItemClick += new EventHandler<AdapterView.ItemClickEventArgs>((s, e) => {
-                var branchDetail = new Intent(this, typeof(BranchDetail));
-                var branch = adapter[e.Position];
-                branchDetail.PutExtra("Town", branch.Town);
-                StartActivity(branchDetail);  
+            gridView.ItemClick += new EventHandler<AdapterView.ItemClickEventArgs>((s, e) =>
+            {
 
-                this.StartActivity(typeof(BranchDetail));
+                // Create a branch detail activity 
+                var branchDetail = new Intent(this, typeof(BranchDetail));
+
+                // Pass in the town
+                branchDetail.PutExtra("Town", adapter[e.Position].Town);
+
+                // Start the activity
+                StartActivity(branchDetail);  
             });
 
             // Assign the adapter
-            listView.Adapter = adapter;
+            gridView.Adapter = adapter;
+
+            // Hides 
             progressBar.Visibility = ViewStates.Gone;
 
+            // This downloads the images in a background thread
             ThreadPool.QueueUserWorkItem(async o => 
             {
                 foreach (var item in viewModel.Items)
@@ -64,6 +69,8 @@ namespace RMV.Awesome.Droid
                     await Lib.Images.Download(item);
                 }
 
+                // This lets the adapter know to update itself
+                // It needs to run back on the UI thread
                 RunOnUiThread(() => { adapter.NotifyDataSetChanged(); });
             });
 

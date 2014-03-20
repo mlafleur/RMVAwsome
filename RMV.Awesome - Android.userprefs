@@ -1,11 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\..\..\Program Files (x86)\MSBuild\Xamarin\Android\Xamarin.Android.Common.targets">
-    <Files>
-      <File FileName="RMV.Awesome.Android\MainActivity.cs" Line="83" Column="10" />
-      <File FileName="..\..\..\..\..\Program Files (x86)\MSBuild\Xamarin\Android\Xamarin.Android.Common.targets" Line="606" Column="3" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

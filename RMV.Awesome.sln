@@ -314,7 +314,6 @@ Global
 		{F4B5D8E2-3241-4A44-AB47-EF22D6D4989A}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
 		{F4B5D8E2-3241-4A44-AB47-EF22D6D4989A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{F4B5D8E2-3241-4A44-AB47-EF22D6D4989A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{F4B5D8E2-3241-4A44-AB47-EF22D6D4989A}.Debug|Mixed Platforms.Deploy.0 = Debug|Any CPU
 		{F4B5D8E2-3241-4A44-AB47-EF22D6D4989A}.Debug|x64.ActiveCfg = Debug|Any CPU
 		{F4B5D8E2-3241-4A44-AB47-EF22D6D4989A}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{F4B5D8E2-3241-4A44-AB47-EF22D6D4989A}.Release|Any CPU.ActiveCfg = Release|Any CPU

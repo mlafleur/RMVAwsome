@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="100px">
         <TextView
-            android:id="@+id/Title"
+            android:id="@+id/branchitem_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Town Name"
@@ -19,7 +19,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textStyle="bold" />
         <TextView
-            android:id="@+id/Subtitle"
+            android:id="@+id/branchitem_subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#ff000000"
@@ -28,7 +28,7 @@
             android:textStyle="normal" />
     </LinearLayout>
     <ImageView
-        android:id="@+id/Image"
+        android:id="@+id/branchitem_icon"
         android:layout_width="100px"
         android:layout_height="100px"
         android:padding="5dp"

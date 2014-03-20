@@ -27,6 +27,13 @@ namespace RMV.Awesome.Droid.Lib
             // File Exists
             if (File.Exists(localPath))
             {
+                var created = File.GetCreationTime(localPath);
+                if(created.CompareTo(DateTime.Now.AddDays(-1)) < 0)
+                {
+                    System.Diagnostics.Debug.WriteLine("Keeping " + localPath);
+                    return;
+                }
+
                 System.Diagnostics.Debug.WriteLine("Deleting " + localPath);
                 File.Delete(localPath);
             }

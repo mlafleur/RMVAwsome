@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -14,15 +15,6 @@
         android:textStyle="bold"
         android:padding="5dp"
         android:textColor="#ffffffff" />
-    <ListView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/branchList"
-        android:padding="5dp"
-        android:minHeight="150px"
-        android:choiceMode="singleChoice"
-        android:fadingEdge="none"
-        android:fastScrollEnabled="true" />
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,5 +23,16 @@
         android:indeterminateOnly="true"
         style="@android:style/Widget.ProgressBar"
         android:indeterminateBehavior="cycle"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0" />
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnWidth="250dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center" />
 </LinearLayout>

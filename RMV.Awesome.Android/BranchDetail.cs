@@ -41,7 +41,7 @@ namespace RMV.Awesome.Droid
             FindViewById<TextView>(Resource.Id.BranchTitle).Text = Branch.Title;
             FindViewById<TextView>(Resource.Id.LicensingWait).Text = Branch.LicensingWait;
             FindViewById<TextView>(Resource.Id.RegistrationWait).Text = Branch.RegistrationWait;
-            FindViewById<ImageView>(Resource.Id.BranchImage).SetImageURI(Android.Net.Uri.Parse(Branch.ImagePath));
+            FindViewById<ImageView>(Resource.Id.branchitem_icon).SetImageURI(Android.Net.Uri.Parse(Branch.ImagePath));
         }
     }
 }
