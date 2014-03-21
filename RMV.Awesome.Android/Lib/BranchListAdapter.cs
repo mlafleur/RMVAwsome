@@ -1,42 +1,25 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-
 using System.Collections.ObjectModel;
-using Android.Net;
-using Android.Graphics;
-using System.Threading.Tasks;
-using System.Net;
-using System.IO;
-using System.Threading;
 
 namespace RMV.Awesome.Droid.Lib
 {
     public class BranchListAdapter : BaseAdapter<RMV.Awesome.PCL.Model.Branch>
     {
-        ObservableCollection<RMV.Awesome.PCL.Model.Branch> items;
-        Activity context;
-
-        
+        private Activity context;
+        private ObservableCollection<RMV.Awesome.PCL.Model.Branch> items;
 
         public BranchListAdapter(Activity context, ObservableCollection<RMV.Awesome.PCL.Model.Branch> items)
             : base()
         {
             this.context = context;
-            this.items = items;            
+            this.items = items;
         }
 
-        public override long GetItemId(int position)
-        {            
-            return position;
+        public override int Count
+        {
+            get { return items.Count; }
         }
 
         public override RMV.Awesome.PCL.Model.Branch this[int position]
@@ -44,9 +27,9 @@ namespace RMV.Awesome.Droid.Lib
             get { return items[position]; }
         }
 
-        public override int Count
+        public override long GetItemId(int position)
         {
-            get { return items.Count; }
+            return position;
         }
 
         public override View GetView(int position, View convertView, ViewGroup parent)
@@ -55,17 +38,12 @@ namespace RMV.Awesome.Droid.Lib
             if (view == null) // otherwise create a new one
                 view = context.LayoutInflater.Inflate(Resource.Layout.BranchItem, null);
 
+            // Assign the data to the correct layout elements
             view.FindViewById<TextView>(Resource.Id.branchitem_title).Text = items[position].Title;
             view.FindViewById<TextView>(Resource.Id.branchitem_subtitle).Text = items[position].Subtitle;
-
-
-
-            var imageUri = Android.Net.Uri.Parse(items[position].ImagePath);
-
-            view.FindViewById<ImageView>(Resource.Id.branchitem_icon).SetImageURI(imageUri);
+            view.FindViewById<ImageView>(Resource.Id.branchitem_icon).SetImageURI(Android.Net.Uri.Parse(items[position].ImagePath));
 
             return view;
         }
-
     }
 }

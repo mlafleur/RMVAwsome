@@ -1,17 +1,7 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using System.Threading.Tasks;
 using System.IO;
 using System.Net;
+using System.Threading.Tasks;
 
 namespace RMV.Awesome.Droid.Lib
 {
@@ -23,12 +13,11 @@ namespace RMV.Awesome.Droid.Lib
             string localFilename = branch.Id;
             string localPath = System.IO.Path.Combine(documentsPath, localFilename);
 
-
             // File Exists
             if (File.Exists(localPath))
             {
                 var created = File.GetCreationTime(localPath);
-                if(created.CompareTo(DateTime.Now.AddDays(-1)) < 0)
+                if (created.CompareTo(DateTime.Now.AddDays(-1)) < 0)
                 {
                     System.Diagnostics.Debug.WriteLine("Keeping " + localPath);
                     return;
@@ -37,7 +26,6 @@ namespace RMV.Awesome.Droid.Lib
                 System.Diagnostics.Debug.WriteLine("Deleting " + localPath);
                 File.Delete(localPath);
             }
-
 
             // File does not exist
             if (!File.Exists(localPath))
@@ -58,9 +46,6 @@ namespace RMV.Awesome.Droid.Lib
                 branch.ImagePath = localPath;
                 System.Diagnostics.Debug.WriteLine("Image saved as " + branch.ImagePath);
             }
-
-
         }
-
     }
 }

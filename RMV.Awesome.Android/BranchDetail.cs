@@ -1,31 +1,21 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
+using System.Linq;
 
 namespace RMV.Awesome.Droid
 {
     [Activity(Label = "Branch Details")]
     public class BranchDetail : Activity
     {
-        RMV.Awesome.PCL.Model.MainViewModel viewModel = RMV.Awesome.PCL.Model.MainViewModel.Current;
-
         private RMV.Awesome.PCL.Model.Branch _branch;
-
+        private RMV.Awesome.PCL.Model.MainViewModel viewModel = RMV.Awesome.PCL.Model.MainViewModel.Current;
         public RMV.Awesome.PCL.Model.Branch Branch
         {
             get { return _branch; }
             set { _branch = value; }
         }
-        
-
 
         protected override void OnCreate(Bundle bundle)
         {
