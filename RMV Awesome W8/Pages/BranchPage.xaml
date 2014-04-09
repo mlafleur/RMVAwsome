@@ -128,10 +128,10 @@
                 </Border>
                 <Border Grid.Row="1"
                         Background="#FFA6A9F0">
-                    <UI:AdControl ApplicationId="ff8033b3-8711-4711-9fef-8fdffe00e3ec"
+                    <!--<UI:AdControl ApplicationId="ff8033b3-8711-4711-9fef-8fdffe00e3ec"
                                   AdUnitId="162821"
                                   Width="250"
-                                  Height="250" />
+                                  Height="250" />-->
                 </Border>
             </Grid>
         </Grid>

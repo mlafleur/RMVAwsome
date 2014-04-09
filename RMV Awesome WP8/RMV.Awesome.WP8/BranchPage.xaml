@@ -104,11 +104,11 @@
                            Foreground="White" />
             </Border>
         </Grid>
-        <UI:AdControl Grid.Row="2"
+        <!--<UI:AdControl Grid.Row="2"
                       Width="480"
                       Height="80"
                       ApplicationId="4aebd19d-a835-425f-b6e8-43385d5fdf2a"
                       AdUnitId="162825"
-                      IsAutoCollapseEnabled="True" />
+                      IsAutoCollapseEnabled="True" />-->
     </Grid>
 </phone:PhoneApplicationPage>

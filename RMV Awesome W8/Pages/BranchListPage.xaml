@@ -96,12 +96,12 @@
             </GridView.ItemTemplate>
         </GridView>
 
-        <UI:AdControl Grid.Row="1"
+        <!--<UI:AdControl Grid.Row="1"
                       Width="728"
                       Height="90"
                       VerticalAlignment="Bottom"
                       AdUnitId="162820"
-                      ApplicationId="ff8033b3-8711-4711-9fef-8fdffe00e3ec" />
+                      ApplicationId="ff8033b3-8711-4711-9fef-8fdffe00e3ec" />-->
 
         <!-- Back button and page title -->
         <Grid>
