@@ -16,6 +16,24 @@ namespace RMV.Awesome.WP8
             //BuildLocalizedApplicationBar();
         }
 
+        private void ApplicationBarMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("This app accesses your phone's location. Is that ok?",
+            "Location",
+            MessageBoxButton.OKCancel);
+
+            if (result == MessageBoxResult.OK)
+            {
+                System.IO.IsolatedStorage.IsolatedStorageSettings.ApplicationSettings["location"] = true;
+            }
+            else
+            {
+                System.IO.IsolatedStorage.IsolatedStorageSettings.ApplicationSettings["location"] = false;
+            }
+
+            System.IO.IsolatedStorage.IsolatedStorageSettings.ApplicationSettings.Save();
+        }
+
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             this.NavigationService.Navigate(new Uri("/BranchPage.xaml?branchindex=" + BranchList.SelectedIndex.ToString(), UriKind.Relative));
@@ -23,7 +41,6 @@ namespace RMV.Awesome.WP8
 
         private async void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
-            
             // Get our application settings
             var settings = System.IO.IsolatedStorage.IsolatedStorageSettings.ApplicationSettings;
 
@@ -39,12 +56,12 @@ namespace RMV.Awesome.WP8
                     var position = await locator.GetGeopositionAsync();
 
                     // Pass current position to PCL
-                    RMV.Awesome.PCL.Utilities.Location.DeviceLatitude = position.Coordinate.Latitude;
-                    RMV.Awesome.PCL.Utilities.Location.DeviceLogitude = position.Coordinate.Longitude;
+                    RMV.Awesome.PCL.Utilities.Location.DeviceLatitude = position.Coordinate.Point.Position.Latitude;
+                    RMV.Awesome.PCL.Utilities.Location.DeviceLogitude = position.Coordinate.Point.Position.Longitude;
                 }
                 catch
                 {
-                    // We were unable to check location 
+                    // We were unable to check location
                 }
             }
 
@@ -53,25 +70,6 @@ namespace RMV.Awesome.WP8
             var ignore = viewModel.FetchXMLFeed();
         }
 
-        private void ApplicationBarMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBoxResult result = MessageBox.Show("This app accesses your phone's location. Is that ok?",
-            "Location",
-            MessageBoxButton.OKCancel);
-           
-
-            if (result == MessageBoxResult.OK)
-            {
-                System.IO.IsolatedStorage.IsolatedStorageSettings.ApplicationSettings["location"] = true;
-            }
-            else
-            {
-                System.IO.IsolatedStorage.IsolatedStorageSettings.ApplicationSettings["location"] = false;
-            }
-
-            System.IO.IsolatedStorage.IsolatedStorageSettings.ApplicationSettings.Save();
-
-        }
         // Sample code for building a localized ApplicationBar
         //private void BuildLocalizedApplicationBar()
         //{
