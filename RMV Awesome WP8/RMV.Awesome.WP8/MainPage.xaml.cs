@@ -50,7 +50,7 @@ namespace RMV.Awesome.WP8
 
             PCL.Model.MainViewModel viewModel = PCL.Model.MainViewModel.Current;
             this.DataContext = viewModel;
-            viewModel.FetchXMLFeed();
+            var ignore = viewModel.FetchXMLFeed();
         }
 
         private void ApplicationBarMenuItem_Click(object sender, EventArgs e)

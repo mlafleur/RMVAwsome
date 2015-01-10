@@ -76,7 +76,7 @@ namespace RMV.Awesome.W8.Pages
             }
             
             this.DefaultViewModel["Items"] = PCL.Model.MainViewModel.Current.Items;
-            PCL.Model.MainViewModel.Current.FetchXMLFeed();
+            var ignore = PCL.Model.MainViewModel.Current.FetchXMLFeed();
         }
 
         #region NavigationHelper registration
