@@ -151,3 +151,4 @@ $RECYCLE.BIN/
 .DS_Store
 
 /Components/azure-mobile-services-1.1.0/samples
+packages/
