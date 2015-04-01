@@ -1,4 +1,4 @@
-﻿using RMV.Awesome.PCL.Model;
+﻿using RMV.Awesome.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace RMV.Awesome.PCL.Utilities
+namespace RMV.Awesome
 {
     public class Feeds
     {
@@ -14,7 +14,7 @@ namespace RMV.Awesome.PCL.Utilities
         {
             // Fetch Azure Branch Data
             var azureBranchData = await new AzureBranchData().GetBranchCollection();
-            var sortedBranchData = azureBranchData.OrderBy(c => c.Distance = Utilities.Location.CalculateDistance(c.Latitude, c.Longitude));
+            var sortedBranchData = azureBranchData.OrderBy(c => c.Distance = Location.CalculateDistance(c.Latitude, c.Longitude));
             return sortedBranchData.AsEnumerable();
         }
 

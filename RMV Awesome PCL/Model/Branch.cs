@@ -1,4 +1,4 @@
-﻿namespace RMV.Awesome.PCL.Model
+﻿namespace RMV.Awesome.Model
 {
     public class Branch : System.ComponentModel.INotifyPropertyChanged
     {

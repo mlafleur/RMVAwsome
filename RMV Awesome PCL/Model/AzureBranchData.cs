@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.WindowsAzure.MobileServices;
 using System;
 
-namespace RMV.Awesome.PCL.Model
+namespace RMV.Awesome.Model
 {
     public class AzureBranchData
     {

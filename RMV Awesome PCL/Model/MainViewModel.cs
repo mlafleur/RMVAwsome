@@ -3,7 +3,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace RMV.Awesome.PCL.Model
+namespace RMV.Awesome.Model
 {
     public class MainViewModel
     {
@@ -32,9 +32,9 @@ namespace RMV.Awesome.PCL.Model
             {
                 // If our current branch list (items) is empty, populate it
                 if (Items.Count == 0) 
-                    Items = new ObservableCollection<Branch>(await Utilities.Feeds.GetBranchDetails());
+                    Items = new ObservableCollection<Branch>(await Feeds.GetBranchDetails());
 
-                var updatedWaitTimes = await Utilities.Feeds.GetWaitTimeChanges(Items);
+                var updatedWaitTimes = await Feeds.GetWaitTimeChanges(Items);
 
                 foreach (var branch in updatedWaitTimes)
                 {

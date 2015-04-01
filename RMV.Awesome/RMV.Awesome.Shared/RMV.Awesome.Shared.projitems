@@ -19,12 +19,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Common\ObservableDictionary.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Common\RelayCommand.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Common\SuspensionManager.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Feeds.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Location.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\AzureBranchData.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Branch.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\DesignTimeViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\MainViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)Common\ReadMe.txt" />

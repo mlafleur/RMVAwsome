@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RMV.Awesome.PCL.Utilities
+namespace RMV.Awesome
 {
     public class Location
     {
