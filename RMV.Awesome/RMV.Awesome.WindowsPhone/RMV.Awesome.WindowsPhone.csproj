@@ -146,6 +146,7 @@
     <Content Include="Assets\WP8-Medium.png" />
     <Content Include="Assets\WP8-Small.png" />
     <Content Include="Assets\WP8-Wide.png" />
+    <None Include="Package.StoreAssociation.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\RMV Awesome PCL\RMV.Awesome.PCL.csproj">
