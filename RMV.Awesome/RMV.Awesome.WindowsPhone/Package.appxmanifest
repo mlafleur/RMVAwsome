@@ -5,7 +5,7 @@
   <Properties>
     <DisplayName>RMV Awesome</DisplayName>
     <PublisherDisplayName>MassiveScale</PublisherDisplayName>
-    <Logo>Assets\StoreLogo.png</Logo>
+    <Logo>Assets/WP8-StoreLogo.png</Logo>
   </Properties>
   <Prerequisites>
     <OSMinVersion>6.3.1</OSMinVersion>
@@ -16,10 +16,10 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="RMV.Awesome.WindowsPhone.App">
-      <m3:VisualElements DisplayName="RMV Awesome" Square150x150Logo="Assets\SquareTile150x150.png" Square44x44Logo="Assets\Logo.png" Description="RMV Awesome!" ForegroundText="light" BackgroundColor="#464646">
-        <m3:DefaultTile Square71x71Logo="Assets\SquareTile71x71.png">
+      <m3:VisualElements DisplayName="RMV Awesome" Square150x150Logo="Assets\WP8-150x150.png" Square44x44Logo="Assets\WP8-44x44.png" Description="RMV Awesome!" ForegroundText="light" BackgroundColor="#464646">
+        <m3:DefaultTile Square71x71Logo="Assets\WP8-71x71.png" Wide310x150Logo="Assets\WP8-310x150.png">
         </m3:DefaultTile>
-        <m3:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#464646" />
+        <m3:SplashScreen Image="Assets/Splash-480-800.png" BackgroundColor="#464646" />
       </m3:VisualElements>
     </Application>
   </Applications>

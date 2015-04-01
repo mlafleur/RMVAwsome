@@ -20,6 +20,8 @@
     <RestorePackages>true</RestorePackages>
     <PackageCertificateThumbprint>0F19C7F9EB83E9C0D40E3013E91C8DDCEC13BEE6</PackageCertificateThumbprint>
     <NuGetPackageImportStamp>c3f22d3d</NuGetPackageImportStamp>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>

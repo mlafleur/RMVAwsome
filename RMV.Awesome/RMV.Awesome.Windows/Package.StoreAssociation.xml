@@ -348,21 +348,32 @@
     <Language Code="zu-za" InMinimumRequirementSet="true" />
   </SupportedLocales>
   <ProductReservedInfo>
-    <MainPackageIdentityName>45328MassiveScale.RMVAwesome</MainPackageIdentityName>
+    <MainPackageIdentityName>45328MassiveScale.MassachusettsRMVInfo</MainPackageIdentityName>
     <ReservedNames>
-      <ReservedName>RMV Awesome</ReservedName>
+      <ReservedName>Massachusetts RMV Info</ReservedName>
+      <ReservedName>RMV Awesome!</ReservedName>
     </ReservedNames>
   </ProductReservedInfo>
   <AccountPackageIdentityNames>
     <MainPackageIdentityName>45328MassiveScale.ImageImporter</MainPackageIdentityName>
-    <MainPackageIdentityName>45328MassiveScale.MassachusettsRMVInfo</MainPackageIdentityName>
+    <MainPackageIdentityName>45328MassiveScale.RMVAwesome</MainPackageIdentityName>
     <MainPackageIdentityName>45328MassiveScale.SocialSuds</MainPackageIdentityName>
   </AccountPackageIdentityNames>
-  <PackageInfoList LandingUrl="https://appdev.microsoft.com:443/StorePortals/Developer/Catalog/ReleaseAnchor/9c9d0878-bbaf-488e-8b2d-91d63a359e21">
+  <PackageInfoList LandingUrl="https://appdev.microsoft.com:443/StorePortals/Developer/Catalog/ReleaseAnchor/5b19f93c-a2ff-4e3b-99c2-987b9948a0af">
+    <PackageInfo>
+      <OsMinVersion>6.2.1.0</OsMinVersion>
+      <PackageArchitecture>x86</PackageArchitecture>
+      <PackageMaxArchitectureVersion>1.0.0.22</PackageMaxArchitectureVersion>
+    </PackageInfo>
+    <PackageInfo>
+      <OsMinVersion>6.2.1.0</OsMinVersion>
+      <PackageArchitecture>arm</PackageArchitecture>
+      <PackageMaxArchitectureVersion>1.0.0.22</PackageMaxArchitectureVersion>
+    </PackageInfo>
     <PackageInfo>
       <OsMinVersion>6.3.0.0</OsMinVersion>
       <PackageArchitecture>neutral</PackageArchitecture>
-      <PackageMaxArchitectureVersion>1.1.0.2</PackageMaxArchitectureVersion>
+      <PackageMaxArchitectureVersion>2.0.0.27</PackageMaxArchitectureVersion>
     </PackageInfo>
   </PackageInfoList>
 </StoreAssociation>
