@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="45328MassiveScale.RMVAwesome" Publisher="CN=D17C0479-956D-4561-92A8-D153C047F69C" Version="3.0.0.0" />
+  <Identity Name="45328MassiveScale.RMVAwesome" Publisher="CN=D17C0479-956D-4561-92A8-D153C047F69C" Version="3.0.0.1" />
   <mp:PhoneIdentity PhoneProductId="aa44d767-2b9f-4714-bf68-cf3a243167cc" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>RMV Awesome</DisplayName>

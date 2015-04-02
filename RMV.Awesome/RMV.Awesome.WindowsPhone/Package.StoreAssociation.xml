@@ -194,5 +194,11 @@
     <MainPackageIdentityName>45328MassiveScale.MassachusettsRMVInfo</MainPackageIdentityName>
     <MainPackageIdentityName>45328MassiveScale.SocialSuds</MainPackageIdentityName>
   </AccountPackageIdentityNames>
-  <PackageInfoList LandingUrl="https://dev.windowsphone.com/AppSubmission/AssociationLanding?windowsProductId=9c9d0878-bbaf-488e-8b2d-91d63a359e21" />
+  <PackageInfoList LandingUrl="https://dev.windowsphone.com/AppSubmission/AssociationLanding?windowsProductId=9c9d0878-bbaf-488e-8b2d-91d63a359e21">
+    <PackageInfo>
+      <OsMinVersion>6.3.0.0</OsMinVersion>
+      <PackageArchitecture>neutral</PackageArchitecture>
+      <PackageMaxArchitectureVersion>3.0.0.0</PackageMaxArchitectureVersion>
+    </PackageInfo>
+  </PackageInfoList>
 </StoreAssociation>
