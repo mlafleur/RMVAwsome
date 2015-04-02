@@ -1,4 +1,6 @@
-﻿using RMV.Awesome.Common;
+﻿using Microsoft.Rest;
+using RMV.Awesome.Api.Models;
+using RMV.Awesome.Common;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -67,6 +69,8 @@ namespace RMV.Awesome
         /// session.  The state will be null the first time a page is visited.</param>
         private async void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
+            double lat;
+            double lng;
             try
             {
                 // Reference the locator
@@ -75,18 +79,27 @@ namespace RMV.Awesome
                 // Sample the current position
                 var position = await locator.GetGeopositionAsync();
 
+
                 // Store the current POS
-                Location.DeviceLatitude = position.Coordinate.Point.Position.Latitude;
-                Location.DeviceLogitude = position.Coordinate.Point.Position.Longitude;
+                lat = position.Coordinate.Point.Position.Latitude;
+                lng = position.Coordinate.Point.Position.Longitude;
             }
             catch
             {
-                // We were unable to check location (most common reason is the user disabled geolocation
+                lat = 0;
+                lng = 0;
             }
 
 
-            await Model.MainViewModel.Current.FetchXMLFeed();
-            this.DefaultViewModel["Items"] = Model.MainViewModel.Current.Items;
+            var branchOps = new Api.BranchOperations(new Api.RMVAwesomeAPIClient());
+
+            HttpOperationResponse<IList<Branch>> result;
+            if (lat == 0 && lng == 0)
+                result = await branchOps.GetBranchListWithOperationResponseAsync();
+            else
+                result = await branchOps.GetBranchListDistanceWithOperationResponseAsync(lat, lng);
+
+            this.DefaultViewModel["Items"] = result.Body;
         }
 
         /// <summary>
@@ -130,7 +143,7 @@ namespace RMV.Awesome
 
         private void itemGridView_ItemClick(object sender, ItemClickEventArgs e)
         {
-            var branch = e.ClickedItem as Model.Branch;
+            var branch = e.ClickedItem as Branch;
             this.Frame.Navigate(typeof(BranchPage), branch.Town);
         }
     }

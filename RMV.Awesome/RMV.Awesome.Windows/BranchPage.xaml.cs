@@ -64,10 +64,13 @@ namespace RMV.Awesome
         /// <see cref="Frame.Navigate(Type, Object)"/> when this page was initially requested and
         /// a dictionary of state preserved by this page during an earlier
         /// session. The state will be null the first time a page is visited.</param>
-        private void navigationHelper_LoadState(object sender, LoadStateEventArgs e)
+        private async void navigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
             string town = e.NavigationParameter as string;
-            this.DataContext = Model.MainViewModel.Current.Items.First(c => c.Town == town);
+
+            var branchOps = new Api.BranchOperations(new Api.RMVAwesomeAPIClient());
+            var branchList = await branchOps.GetBranchListWithOperationResponseAsync();
+            this.DataContext = branchList.Body.First(c => c.Town == town);
         }
 
         /// <summary>

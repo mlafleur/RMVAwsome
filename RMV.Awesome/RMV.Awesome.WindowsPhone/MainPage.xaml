@@ -17,8 +17,7 @@
 
         <!-- Collection of items displayed by this page -->
         <CollectionViewSource x:Name="itemsViewSource"
-                              Source="{Binding Items}"
-                              d:Source="{Binding Items, Source={d:DesignInstance IsDesignTimeCreatable=True, Type=model:DesignTimeViewModel}}" />
+                              Source="{Binding Items}" />
 
     </Page.Resources>
 
@@ -68,13 +67,42 @@
                         <StackPanel Orientation="Horizontal">
                             <Image Source="{Binding ImagePath}"
                                    Stretch="UniformToFill"
-                                   AutomationProperties.Name="{Binding Title}"
+                                   AutomationProperties.Name="{Binding DisplayName}"
                                    Width="100"
                                    Height="100"
                                    Margin="3" />
                             <StackPanel Margin="15">
-                                <TextBlock Text="{Binding Title}"
+                                <TextBlock Text="{Binding DisplayName}"
                                            FontWeight="SemiBold" />
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Licensing Wait:"
+                                               Foreground="{StaticResource ListViewItemOverlaySecondaryForegroundThemeBrush}"
+                                               Style="{StaticResource BaseTextBlockStyle}"
+                                               TextWrapping="NoWrap"
+                                               FontSize="12"
+                                               Margin="0,0,5,0" />
+                                    <TextBlock Text="{Binding LicensingWait}"
+                                               Foreground="{StaticResource ListViewItemOverlaySecondaryForegroundThemeBrush}"
+                                               Style="{StaticResource BaseTextBlockStyle}"
+                                               TextWrapping="NoWrap"
+                                               FontSize="12" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Registration Wait:"
+                                               Foreground="{StaticResource ListViewItemOverlaySecondaryForegroundThemeBrush}"
+                                               Style="{StaticResource BaseTextBlockStyle}"
+                                               TextWrapping="NoWrap"
+                                               FontSize="12"
+                                               Margin="0,0,5,0" />
+
+                                    <TextBlock Text="{Binding RegistrationWait}"
+                                               Foreground="{StaticResource ListViewItemOverlaySecondaryForegroundThemeBrush}"
+                                               Style="{StaticResource BaseTextBlockStyle}"
+                                               TextWrapping="NoWrap"
+                                               FontSize="12" />
+
+                                </StackPanel>
+
                                 <TextBlock Text="{Binding Subtitle}"
                                            TextWrapping="NoWrap"
                                            FontSize="12" />
