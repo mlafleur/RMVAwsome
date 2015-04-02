@@ -1,6 +1,6 @@
 ﻿namespace RMV.Awesome.Model
 {
-    public class Branch : System.ComponentModel.INotifyPropertyChanged
+    public class Branch : System.ComponentModel.INotifyPropertyChanged, RMV.Awesome.Interfaces.IBranch
     {
         // Set the default values for wait times to "Unknown" until we pull
         // live values from the RMV XML feed
@@ -16,6 +16,8 @@
         {
             get { return Address + ", " + Town + ", MA"; }
         }
+
+        public double Distance { get; set; }
 
         public string Id { get; set; }
 
@@ -40,8 +42,6 @@
                 NotifyChanged("Subtitle");
             }
         }
-
-        public double Distance { get; set; }
 
         public double Longitude { get; set; }
 
