@@ -91,7 +91,7 @@ namespace RMV.Awesome
             }
 
 
-            var branchOps = new Api.BranchOperations(new Api.RMVAwesomeAPIClient());
+            var branchOps = new Api.BranchOperations(new Api.ApiClient());
 
             HttpOperationResponse<IList<Branch>> result;
             if (lat == 0 && lng == 0)

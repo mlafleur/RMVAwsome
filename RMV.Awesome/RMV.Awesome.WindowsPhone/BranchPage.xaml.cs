@@ -69,7 +69,7 @@ namespace RMV.Awesome
         {
             string town = e.NavigationParameter as string;
 
-            var branchOps = new Api.BranchOperations(new Api.RMVAwesomeAPIClient());
+            var branchOps = new Api.BranchOperations(new Api.ApiClient());
             var branchList = await branchOps.GetBranchListWithOperationResponseAsync();
             this.DataContext = branchList.Body.First(c => c.Town == town);
  
