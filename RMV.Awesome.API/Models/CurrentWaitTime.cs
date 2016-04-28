@@ -12,7 +12,7 @@ namespace RMV.Awesome.API.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Branch
+    public partial class CurrentWaitTime
     {
         public string Town { get; set; }
         public string DisplayName { get; set; }
@@ -22,6 +22,9 @@ namespace RMV.Awesome.API.Models
         public string Zip { get; set; }
         public double Latitude { get; set; }
         public double Longitude { get; set; }
+        public double LicensingWait { get; set; }
+        public double RegistrationWait { get; set; }
+        public System.DateTimeOffset SampleTime { get; set; }
         public string ImagePath { get; set; }
     }
 }

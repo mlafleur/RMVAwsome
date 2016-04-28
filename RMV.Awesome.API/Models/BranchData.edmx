@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="branchDataModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Branch">
+          <Key>
+            <PropertyRef Name="Town" />
+          </Key>
+          <Property Name="Town" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DisplayName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Address" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="City" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="State" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Zip" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Latitude" Type="float" Nullable="false" />
+          <Property Name="Longitude" Type="float" Nullable="false" />
+          <Property Name="ImagePath" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BranchHistory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Town" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="LicensingWait" Type="float" Nullable="false" />
+          <Property Name="RegistrationWait" Type="float" Nullable="false" />
+          <Property Name="SampleTime" Type="datetimeoffset" Precision="7" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'rmvawesome.dbo.CurrentWaitTime' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="CurrentWaitTime">
+          <Key>
+            <PropertyRef Name="Town" />
+            <PropertyRef Name="DisplayName" />
+            <PropertyRef Name="Address" />
+            <PropertyRef Name="City" />
+            <PropertyRef Name="State" />
+            <PropertyRef Name="Zip" />
+            <PropertyRef Name="Latitude" />
+            <PropertyRef Name="Longitude" />
+            <PropertyRef Name="LicensingWait" />
+            <PropertyRef Name="RegistrationWait" />
+            <PropertyRef Name="SampleTime" />
+            <PropertyRef Name="ImagePath" />
+          </Key>
+          <Property Name="Town" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DisplayName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Address" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="City" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="State" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Zip" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Latitude" Type="float" Nullable="false" />
+          <Property Name="Longitude" Type="float" Nullable="false" />
+          <Property Name="LicensingWait" Type="float" Nullable="false" />
+          <Property Name="RegistrationWait" Type="float" Nullable="false" />
+          <Property Name="SampleTime" Type="datetimeoffset" Precision="7" Nullable="false" />
+          <Property Name="ImagePath" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="branchDataModelStoreContainer">
+          <EntitySet Name="Branch" EntityType="Self.Branch" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BranchHistory" EntityType="Self.BranchHistory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CurrentWaitTime" EntityType="Self.CurrentWaitTime" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [CurrentWaitTime].[Town] AS [Town], 
+    [CurrentWaitTime].[DisplayName] AS [DisplayName], 
+    [CurrentWaitTime].[Address] AS [Address], 
+    [CurrentWaitTime].[City] AS [City], 
+    [CurrentWaitTime].[State] AS [State], 
+    [CurrentWaitTime].[Zip] AS [Zip], 
+    [CurrentWaitTime].[Latitude] AS [Latitude], 
+    [CurrentWaitTime].[Longitude] AS [Longitude], 
+    [CurrentWaitTime].[LicensingWait] AS [LicensingWait], 
+    [CurrentWaitTime].[RegistrationWait] AS [RegistrationWait], 
+    [CurrentWaitTime].[SampleTime] AS [SampleTime], 
+    [CurrentWaitTime].[ImagePath] AS [ImagePath]
+    FROM [dbo].[CurrentWaitTime] AS [CurrentWaitTime]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="RMV.Awesome.API.Data" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Branch">
+          <Key>
+            <PropertyRef Name="Town" />
+          </Key>
+          <Property Name="Town" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DisplayName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Zip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Latitude" Type="Double" Nullable="false" />
+          <Property Name="Longitude" Type="Double" Nullable="false" />
+          <Property Name="ImagePath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BranchHistory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="Town" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LicensingWait" Type="Double" Nullable="false" />
+          <Property Name="RegistrationWait" Type="Double" Nullable="false" />
+          <Property Name="SampleTime" Type="DateTimeOffset" Nullable="false" Precision="7" />
+        </EntityType>
+        <EntityType Name="CurrentWaitTime">
+          <Key>
+            <PropertyRef Name="Town" />
+            <PropertyRef Name="DisplayName" />
+            <PropertyRef Name="Address" />
+            <PropertyRef Name="City" />
+            <PropertyRef Name="State" />
+            <PropertyRef Name="Zip" />
+            <PropertyRef Name="Latitude" />
+            <PropertyRef Name="Longitude" />
+            <PropertyRef Name="LicensingWait" />
+            <PropertyRef Name="RegistrationWait" />
+            <PropertyRef Name="SampleTime" />
+            <PropertyRef Name="ImagePath" />
+          </Key>
+          <Property Name="Town" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DisplayName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Zip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Latitude" Type="Double" Nullable="false" />
+          <Property Name="Longitude" Type="Double" Nullable="false" />
+          <Property Name="LicensingWait" Type="Double" Nullable="false" />
+          <Property Name="RegistrationWait" Type="Double" Nullable="false" />
+          <Property Name="SampleTime" Type="DateTimeOffset" Nullable="false" Precision="7" />
+          <Property Name="ImagePath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="BranchEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Branches" EntityType="Self.Branch" />
+          <EntitySet Name="BranchHistories" EntityType="Self.BranchHistory" />
+          <EntitySet Name="CurrentWaitTimes" EntityType="Self.CurrentWaitTime" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="branchDataModelStoreContainer" CdmEntityContainer="BranchEntities">
+          <EntitySetMapping Name="Branches">
+            <EntityTypeMapping TypeName="RMV.Awesome.API.Data.Branch">
+              <MappingFragment StoreEntitySet="Branch">
+                <ScalarProperty Name="Town" ColumnName="Town" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Zip" ColumnName="Zip" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BranchHistories">
+            <EntityTypeMapping TypeName="RMV.Awesome.API.Data.BranchHistory">
+              <MappingFragment StoreEntitySet="BranchHistory">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Town" ColumnName="Town" />
+                <ScalarProperty Name="LicensingWait" ColumnName="LicensingWait" />
+                <ScalarProperty Name="RegistrationWait" ColumnName="RegistrationWait" />
+                <ScalarProperty Name="SampleTime" ColumnName="SampleTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CurrentWaitTimes">
+            <EntityTypeMapping TypeName="RMV.Awesome.API.Data.CurrentWaitTime">
+              <MappingFragment StoreEntitySet="CurrentWaitTime">
+                <ScalarProperty Name="Town" ColumnName="Town" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Zip" ColumnName="Zip" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="LicensingWait" ColumnName="LicensingWait" />
+                <ScalarProperty Name="RegistrationWait" ColumnName="RegistrationWait" />
+                <ScalarProperty Name="SampleTime" ColumnName="SampleTime" />
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

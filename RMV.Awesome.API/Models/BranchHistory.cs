@@ -12,16 +12,12 @@ namespace RMV.Awesome.API.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Branch
+    public partial class BranchHistory
     {
+        public System.Guid ID { get; set; }
         public string Town { get; set; }
-        public string DisplayName { get; set; }
-        public string Address { get; set; }
-        public string City { get; set; }
-        public string State { get; set; }
-        public string Zip { get; set; }
-        public double Latitude { get; set; }
-        public double Longitude { get; set; }
-        public string ImagePath { get; set; }
+        public double LicensingWait { get; set; }
+        public double RegistrationWait { get; set; }
+        public System.DateTimeOffset SampleTime { get; set; }
     }
 }

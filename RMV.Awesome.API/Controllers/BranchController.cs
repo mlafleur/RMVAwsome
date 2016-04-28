@@ -11,15 +11,21 @@ namespace RMV.Awesome.API.Controllers
     public class BranchController : ApiController
     {
         [Route("api/branch")]
-        public async Task<List<Branch>> GetBranchList()
+        public async Task<List<BranchList.RMVBranch>> GetBranchList()
         {
             return await BranchList.GetAll();
         }
 
         [Route("api/branch/loc")]
-        public async Task<List<Branch>> GetBranchListDistance(double lat, double lng)
+        public async Task<List<BranchList.RMVBranch>> GetBranchListDistance(double lat, double lng)
         {
                 return await BranchList.GetAll(lat, lng);
+        }
+
+        [Route("api/branch/refresh")]
+        public async Task<bool> GetRefreshTimes()
+        {
+            return await BranchList.RefreshSamples();
         }
     }
 }
