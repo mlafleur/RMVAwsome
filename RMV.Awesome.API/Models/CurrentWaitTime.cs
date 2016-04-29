@@ -22,8 +22,8 @@ namespace RMV.Awesome.API.Models
         public string Zip { get; set; }
         public double Latitude { get; set; }
         public double Longitude { get; set; }
-        public double LicensingWait { get; set; }
-        public double RegistrationWait { get; set; }
+        public decimal LicensingWait { get; set; }
+        public decimal RegistrationWait { get; set; }
         public System.DateTimeOffset SampleTime { get; set; }
         public string ImagePath { get; set; }
     }

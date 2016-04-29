@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using Humanizer;
 
 namespace RMV.Awesome.API.Models
 {
@@ -114,10 +115,10 @@ namespace RMV.Awesome.API.Models
                 branchItem.Longitude = item.Longitude;
 
                 if (item.LicensingWait == -1) branchItem.LicensingWait = "Closed";
-                else branchItem.LicensingWait = item.LicensingWait.ToString();
+                else branchItem.LicensingWait = TimeSpan.FromHours((double)item.LicensingWait).Humanize();
 
                 if (item.RegistrationWait == -1) branchItem.RegistrationWait = "Closed";
-                else branchItem.RegistrationWait = item.RegistrationWait.ToString();
+                else branchItem.RegistrationWait = TimeSpan.FromHours((double)item.RegistrationWait).Humanize();
                 branchList.Add(branchItem);
             }
         }

@@ -41,10 +41,10 @@ warning 6002: The table/view 'rmvawesome.dbo.CurrentWaitTime' does not have a pr
             <PropertyRef Name="Zip" />
             <PropertyRef Name="Latitude" />
             <PropertyRef Name="Longitude" />
-            <PropertyRef Name="LicensingWait" />
-            <PropertyRef Name="RegistrationWait" />
             <PropertyRef Name="SampleTime" />
             <PropertyRef Name="ImagePath" />
+            <PropertyRef Name="LicensingWait" />
+            <PropertyRef Name="RegistrationWait" />
           </Key>
           <Property Name="Town" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="DisplayName" Type="nvarchar" MaxLength="50" Nullable="false" />
@@ -54,8 +54,8 @@ warning 6002: The table/view 'rmvawesome.dbo.CurrentWaitTime' does not have a pr
           <Property Name="Zip" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Latitude" Type="float" Nullable="false" />
           <Property Name="Longitude" Type="float" Nullable="false" />
-          <Property Name="LicensingWait" Type="float" Nullable="false" />
-          <Property Name="RegistrationWait" Type="float" Nullable="false" />
+          <Property Name="LicensingWait" Type="decimal" Precision="6" Scale="2" Nullable="false" />
+          <Property Name="RegistrationWait" Type="decimal" Precision="6" Scale="2" Nullable="false" />
           <Property Name="SampleTime" Type="datetimeoffset" Precision="7" Nullable="false" />
           <Property Name="ImagePath" Type="nvarchar(max)" Nullable="false" />
         </EntityType>
@@ -130,8 +130,8 @@ warning 6002: The table/view 'rmvawesome.dbo.CurrentWaitTime' does not have a pr
           <Property Name="Zip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Latitude" Type="Double" Nullable="false" />
           <Property Name="Longitude" Type="Double" Nullable="false" />
-          <Property Name="LicensingWait" Type="Double" Nullable="false" />
-          <Property Name="RegistrationWait" Type="Double" Nullable="false" />
+          <Property Name="LicensingWait" Type="Decimal" Nullable="false" />
+          <Property Name="RegistrationWait" Type="Decimal" Nullable="false" />
           <Property Name="SampleTime" Type="DateTimeOffset" Nullable="false" Precision="7" />
           <Property Name="ImagePath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
         </EntityType>
