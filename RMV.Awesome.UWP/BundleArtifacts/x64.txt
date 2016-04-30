@@ -1,0 +1,2 @@
+MainPackage=C:\GitHub\RMVAwsome\RMV.Awesome.UWP\bin\x64\Release\RMV.Awesome.UWP_5.0.4.0_x64.appx
+SymbolPackage=C:\GitHub\RMVAwsome\RMV.Awesome.UWP\AppPackages\RMV.Awesome.UWP_5.0.4.0_Test\RMV.Awesome.UWP_5.0.4.0_x64.appxsym

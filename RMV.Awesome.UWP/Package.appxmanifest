@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="45328MassiveScale.RMVAwesome" Publisher="CN=D17C0479-956D-4561-92A8-D153C047F69C" Version="1.1.0.0" />
+  <Identity Name="45328MassiveScale.RMVAwesome" Publisher="CN=D17C0479-956D-4561-92A8-D153C047F69C" Version="5.0.4.0" />
   <mp:PhoneIdentity PhoneProductId="2a581aa4-1df3-485f-87f6-65874e746dbd" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>RMV Awesome</DisplayName>
     <PublisherDisplayName>MassiveScale</PublisherDisplayName>
-    <Logo>Assets\StoreLogo.png</Logo>
+    <Logo>Assets\Square50.png</Logo>
   </Properties>
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
@@ -15,10 +15,15 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="RMV.Awesome.UWP.App">
-      <uap:VisualElements DisplayName="RMV Awesome" Square150x150Logo="Assets\WP8-150x150.png" Square44x44Logo="Assets\WP8-44x44.png" Description="RMV Awesome!" BackgroundColor="#1969B3">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\LogoSquare310.png">
+      <uap:VisualElements DisplayName="RMV Awesome" Square150x150Logo="Assets\Square150.png" Square44x44Logo="Assets\Square44.png" Description="RMV Awesome!" BackgroundColor="#1969B3">
+        <uap:DefaultTile Square310x310Logo="Assets\Square310.png" Wide310x150Logo="Assets\Wide310.png" Square71x71Logo="Assets\Square71.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="wide310x150Logo" />
+            <uap:ShowOn Tile="square310x310Logo" />
+          </uap:ShowNameOnTiles>
         </uap:DefaultTile>
-        <uap:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#1969B3" />
+        <uap:SplashScreen Image="Assets\Splash620.png" BackgroundColor="#1969B3" />
       </uap:VisualElements>
     </Application>
   </Applications>

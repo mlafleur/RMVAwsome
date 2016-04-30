@@ -18,6 +18,9 @@
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <PackageCertificateKeyFile>RMV.Awesome.UWP_StoreKey.pfx</PackageCertificateKeyFile>
     <PackageCertificateThumbprint>7604DB13E563428767599493366BEE3BBEE83308</PackageCertificateThumbprint>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -121,18 +124,15 @@
     <None Include="RMV.Awesome.UWP_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Logo.png" />
-    <Content Include="Assets\LogoSquare310.scale-100.png" />
-    <Content Include="Assets\LogoSquare70.png" />
-    <Content Include="Assets\SmallLogo.png" />
-    <Content Include="Assets\SplashScreen.scale-100.png" />
-    <Content Include="Assets\Wide310x150Logo.scale-100.png" />
-    <Content Include="Assets\WideLogo.png" />
-    <Content Include="Assets\WP8-150x150.scale-100.png" />
-    <Content Include="Assets\WP8-44x44.scale-100.png" />
     <None Include="Package.StoreAssociation.xml" />
+    <Content Include="Assets\Splash620.png" />
+    <Content Include="Assets\Square150.png" />
+    <Content Include="Assets\Square310.png" />
+    <Content Include="Assets\Square44.png" />
+    <Content Include="Assets\Square50.png" />
+    <Content Include="Assets\Square71.png" />
+    <Content Include="Assets\Wide310.png" />
     <Content Include="Properties\Default.rd.xml" />
-    <Content Include="Assets\StoreLogo.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -148,6 +148,7 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
