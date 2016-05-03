@@ -1,1 +1,1 @@
-MainPackage=C:\GitHub\RMVAwsome\RMV.Awesome.UWP\bin\x86\Release\Upload\RMV.Awesome.UWP_5.0.4.0_x86.appx
+MainPackage=C:\GitHub\RMVAwsome\RMV.Awesome.UWP\bin\x86\Release\Upload\RMV.Awesome.UWP_5.0.5.0_x86.appx

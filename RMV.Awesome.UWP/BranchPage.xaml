@@ -16,18 +16,21 @@
 
 
         <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="350" />
-                <ColumnDefinition Width="350" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Image 
+            <Image Grid.ColumnSpan="2"
                    Source="{Binding ImagePath}"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
                    Stretch="UniformToFill" />
 
-            <Grid Grid.Column="2">
+            <Grid Grid.Column="1" Grid.Row="1">
                 <Grid.RowDefinitions>
                     <RowDefinition />
                     <RowDefinition />
@@ -66,7 +69,7 @@
                 </Border>
             </Grid>
 
-            <Grid Grid.Column="1">
+            <Grid Grid.Column="0" Grid.Row="1">
                 <Grid.RowDefinitions>
                     <RowDefinition />
                     <RowDefinition />
@@ -82,9 +85,9 @@
                                    Text="{Binding DisplayName}"
                                    Foreground="White" />
                         <TextBlock HorizontalAlignment="Center"
-                                   FontSize="28"
+                                   FontSize="20"
                                    Text="{Binding Address}"
-                                   Foreground="White" />
+                                   Foreground="White" TextWrapping="Wrap" />
                     </StackPanel>
 
                 </Border>

@@ -39,8 +39,33 @@ namespace RMV.Awesome.UWP
         {
             using (var cl = new UWPClient())
             {
-                var results = await cl.Branch.GetBranchListAsync();
-                this.DataContext = results;
+                double lat;
+                double lng;
+
+                try
+                {
+                    // Reference the locator
+                    var locator = new Windows.Devices.Geolocation.Geolocator();
+
+                    // Sample the current position
+                    var position = await locator.GetGeopositionAsync();
+
+                    // Store the current POS
+                    lat = position.Coordinate.Point.Position.Latitude;
+                    lng = position.Coordinate.Point.Position.Longitude;
+                }
+                catch
+                {
+                    lat = 0;
+                    lng = 0;
+                }
+
+                if (lat == 0 && lng == 0)
+                    this.DataContext = await cl.Branch.GetBranchListAsync();                
+                else
+                    this.DataContext = await cl.Branch.GetBranchListDistanceAsync(lat, lng);
+
+
             }
             base.OnNavigatedTo(e);
         }

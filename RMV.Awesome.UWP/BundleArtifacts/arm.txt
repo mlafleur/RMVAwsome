@@ -1,2 +1,2 @@
-MainPackage=C:\GitHub\RMVAwsome\RMV.Awesome.UWP\bin\ARM\Release\RMV.Awesome.UWP_5.0.4.0_ARM.appx
-SymbolPackage=C:\GitHub\RMVAwsome\RMV.Awesome.UWP\AppPackages\RMV.Awesome.UWP_5.0.4.0_Test\RMV.Awesome.UWP_5.0.4.0_ARM.appxsym
+MainPackage=C:\GitHub\RMVAwsome\RMV.Awesome.UWP\bin\ARM\Release\RMV.Awesome.UWP_5.0.5.0_ARM.appx
+SymbolPackage=C:\GitHub\RMVAwsome\RMV.Awesome.UWP\AppPackages\RMV.Awesome.UWP_5.0.5.0_Test\RMV.Awesome.UWP_5.0.5.0_ARM.appxsym
