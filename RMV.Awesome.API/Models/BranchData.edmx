@@ -18,6 +18,7 @@
           <Property Name="Latitude" Type="float" Nullable="false" />
           <Property Name="Longitude" Type="float" Nullable="false" />
           <Property Name="ImagePath" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="FullAddress" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="BranchHistory">
           <Key>
@@ -28,6 +29,7 @@
           <Property Name="LicensingWait" Type="float" Nullable="false" />
           <Property Name="RegistrationWait" Type="float" Nullable="false" />
           <Property Name="SampleTime" Type="datetimeoffset" Precision="7" Nullable="false" />
+          <Property Name="Fetched" Type="datetime" />
         </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'rmvawesome.dbo.CurrentWaitTime' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -41,10 +43,10 @@ warning 6002: The table/view 'rmvawesome.dbo.CurrentWaitTime' does not have a pr
             <PropertyRef Name="Zip" />
             <PropertyRef Name="Latitude" />
             <PropertyRef Name="Longitude" />
-            <PropertyRef Name="SampleTime" />
             <PropertyRef Name="ImagePath" />
             <PropertyRef Name="LicensingWait" />
             <PropertyRef Name="RegistrationWait" />
+            <PropertyRef Name="SampleTime" />
           </Key>
           <Property Name="Town" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="DisplayName" Type="nvarchar" MaxLength="50" Nullable="false" />
@@ -54,6 +56,7 @@ warning 6002: The table/view 'rmvawesome.dbo.CurrentWaitTime' does not have a pr
           <Property Name="Zip" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Latitude" Type="float" Nullable="false" />
           <Property Name="Longitude" Type="float" Nullable="false" />
+          <Property Name="FullAddress" Type="nvarchar(max)" />
           <Property Name="LicensingWait" Type="decimal" Precision="6" Scale="2" Nullable="false" />
           <Property Name="RegistrationWait" Type="decimal" Precision="6" Scale="2" Nullable="false" />
           <Property Name="SampleTime" Type="datetimeoffset" Precision="7" Nullable="false" />
@@ -72,6 +75,7 @@ warning 6002: The table/view 'rmvawesome.dbo.CurrentWaitTime' does not have a pr
     [CurrentWaitTime].[Zip] AS [Zip], 
     [CurrentWaitTime].[Latitude] AS [Latitude], 
     [CurrentWaitTime].[Longitude] AS [Longitude], 
+    [CurrentWaitTime].[FullAddress] AS [FullAddress], 
     [CurrentWaitTime].[LicensingWait] AS [LicensingWait], 
     [CurrentWaitTime].[RegistrationWait] AS [RegistrationWait], 
     [CurrentWaitTime].[SampleTime] AS [SampleTime], 
@@ -96,6 +100,7 @@ warning 6002: The table/view 'rmvawesome.dbo.CurrentWaitTime' does not have a pr
           <Property Name="Latitude" Type="Double" Nullable="false" />
           <Property Name="Longitude" Type="Double" Nullable="false" />
           <Property Name="ImagePath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FullAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="BranchHistory">
           <Key>
@@ -106,6 +111,7 @@ warning 6002: The table/view 'rmvawesome.dbo.CurrentWaitTime' does not have a pr
           <Property Name="LicensingWait" Type="Double" Nullable="false" />
           <Property Name="RegistrationWait" Type="Double" Nullable="false" />
           <Property Name="SampleTime" Type="DateTimeOffset" Nullable="false" Precision="7" />
+          <Property Name="Fetched" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityType Name="CurrentWaitTime">
           <Key>
@@ -130,10 +136,11 @@ warning 6002: The table/view 'rmvawesome.dbo.CurrentWaitTime' does not have a pr
           <Property Name="Zip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Latitude" Type="Double" Nullable="false" />
           <Property Name="Longitude" Type="Double" Nullable="false" />
-          <Property Name="LicensingWait" Type="Decimal" Nullable="false" />
-          <Property Name="RegistrationWait" Type="Decimal" Nullable="false" />
+          <Property Name="LicensingWait" Type="Decimal" Nullable="false" Precision="6" Scale="2" />
+          <Property Name="RegistrationWait" Type="Decimal" Nullable="false" Precision="6" Scale="2" />
           <Property Name="SampleTime" Type="DateTimeOffset" Nullable="false" Precision="7" />
           <Property Name="ImagePath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FullAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityContainer Name="BranchEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Branches" EntityType="Self.Branch" />
@@ -149,6 +156,7 @@ warning 6002: The table/view 'rmvawesome.dbo.CurrentWaitTime' does not have a pr
           <EntitySetMapping Name="Branches">
             <EntityTypeMapping TypeName="RMV.Awesome.API.Data.Branch">
               <MappingFragment StoreEntitySet="Branch">
+                <ScalarProperty Name="FullAddress" ColumnName="FullAddress" />
                 <ScalarProperty Name="Town" ColumnName="Town" />
                 <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
                 <ScalarProperty Name="Address" ColumnName="Address" />
@@ -164,6 +172,7 @@ warning 6002: The table/view 'rmvawesome.dbo.CurrentWaitTime' does not have a pr
           <EntitySetMapping Name="BranchHistories">
             <EntityTypeMapping TypeName="RMV.Awesome.API.Data.BranchHistory">
               <MappingFragment StoreEntitySet="BranchHistory">
+                <ScalarProperty Name="Fetched" ColumnName="Fetched" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Town" ColumnName="Town" />
                 <ScalarProperty Name="LicensingWait" ColumnName="LicensingWait" />
@@ -175,6 +184,7 @@ warning 6002: The table/view 'rmvawesome.dbo.CurrentWaitTime' does not have a pr
           <EntitySetMapping Name="CurrentWaitTimes">
             <EntityTypeMapping TypeName="RMV.Awesome.API.Data.CurrentWaitTime">
               <MappingFragment StoreEntitySet="CurrentWaitTime">
+                <ScalarProperty Name="FullAddress" ColumnName="FullAddress" />
                 <ScalarProperty Name="Town" ColumnName="Town" />
                 <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
                 <ScalarProperty Name="Address" ColumnName="Address" />

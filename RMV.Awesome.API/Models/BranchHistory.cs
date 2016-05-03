@@ -19,5 +19,6 @@ namespace RMV.Awesome.API.Models
         public double LicensingWait { get; set; }
         public double RegistrationWait { get; set; }
         public System.DateTimeOffset SampleTime { get; set; }
+        public Nullable<System.DateTime> Fetched { get; set; }
     }
 }

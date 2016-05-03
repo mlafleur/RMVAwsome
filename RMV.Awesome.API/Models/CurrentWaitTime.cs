@@ -26,5 +26,6 @@ namespace RMV.Awesome.API.Models
         public decimal RegistrationWait { get; set; }
         public System.DateTimeOffset SampleTime { get; set; }
         public string ImagePath { get; set; }
+        public string FullAddress { get; set; }
     }
 }

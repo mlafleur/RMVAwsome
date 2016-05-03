@@ -23,5 +23,6 @@ namespace RMV.Awesome.API.Models
         public double Latitude { get; set; }
         public double Longitude { get; set; }
         public string ImagePath { get; set; }
+        public string FullAddress { get; set; }
     }
 }
