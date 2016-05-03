@@ -1,9 +1,9 @@
-﻿using System;
+﻿using Humanizer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Xml.Linq;
-using Humanizer;
 
 namespace RMV.Awesome.API.Models
 {
@@ -52,7 +52,8 @@ namespace RMV.Awesome.API.Models
                     var branchHistory = new BranchHistory();
                     branchHistory.ID = Guid.NewGuid();
                     branchHistory.Town = town;
-                    branchHistory.SampleTime = DateTimeOffset.UtcNow;
+                    branchHistory.SampleTime = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time"));
+                    
 
                     if (licensing.ToLower() != "closed")
                         branchHistory.LicensingWait = TimeSpan.Parse(licensing).TotalHours;
@@ -123,7 +124,6 @@ namespace RMV.Awesome.API.Models
             }
         }
 
-     
         public class RMVBranch
         {
             public string Address { get; set; }
@@ -185,7 +185,6 @@ namespace RMV.Awesome.API.Models
 
         //}
 
-
         //private static async Task RefreshWaitTimes()
         //{
         //    System.Net.Http.HttpClient client = new System.Net.Http.HttpClient();
@@ -216,6 +215,5 @@ namespace RMV.Awesome.API.Models
 
         //    branchList = updatedBranchSet;
         //}
-
     }
 }
