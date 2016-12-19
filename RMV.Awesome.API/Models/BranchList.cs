@@ -11,24 +11,22 @@ namespace RMV.Awesome.API.Models
     {
         private static List<RMVBranch> branchList = new List<RMVBranch>();
 
-        public async static Task<List<RMVBranch>> GetAll()
+        public static List<RMVBranch> GetAll()
         {
             using (var db = new BranchEntities())
             {
                 var x = from c in db.CurrentWaitTimes orderby c.DisplayName select c;
                 PopulateBranchList(x);
-                //await RefreshWaitTimes();
                 return branchList.OrderBy(n => n.DisplayName).ToList();
             }
         }
 
-        public async static Task<List<RMVBranch>> GetAll(double deviceLatitude, double deviceLogitude)
+        public static List<RMVBranch> GetAll(double deviceLatitude, double deviceLogitude)
         {
             using (var db = new BranchEntities())
             {
                 var x = from c in db.CurrentWaitTimes orderby c.DisplayName select c;
                 PopulateBranchList(x);
-                //await RefreshWaitTimes();
                 CalculateDistance(deviceLatitude, deviceLogitude);
                 return branchList.OrderBy(d => d.Distance).ToList();
             }
@@ -124,7 +122,7 @@ namespace RMV.Awesome.API.Models
             }
         }
 
-     
+
         public class RMVBranch
         {
             public string Address { get; set; }
